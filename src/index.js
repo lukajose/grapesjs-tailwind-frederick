@@ -28,12 +28,13 @@ export default (editor, opts = {}) => {
   });
 
   const appendTailwindCss = async (frame) => {
-    const iframe = frame.view.getEl();
+    const iframe = frame?.view?.getEl();
 
     if (!iframe) return;
 
     const { tailwindPlayCdn, plugins, config, cover } = options;
     const init = () => {
+      // @ts-ignore
       iframe.contentWindow.tailwind.config = config;
     }
 
@@ -56,8 +57,10 @@ export default (editor, opts = {}) => {
   }
 
   editor.Canvas.getModel()['on']('change:frames', (m, frames) => {
-    frames.forEach(frame => frame.once('loaded', () => appendTailwindCss(frame)));
+    frames.forEach((frame) => frame.once('loaded', () => appendTailwindCss(frame)));
   });
 };
+
+
 
 export { components };
