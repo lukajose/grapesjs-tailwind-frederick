@@ -162,8 +162,8 @@ const editor = grapesjs.init({
 Clone the repository
 
 ```sh
-$ git clone https://github.com/Ju99ernaut/grapesjs-tailwind.git
-$ cd grapesjs-tailwind
+$ git clone https://github.com/lukajose/grapesjs-tailwind-frederick.git
+$ cd grapesjs-tailwind-frederick
 ```
 
 Install dependencies
