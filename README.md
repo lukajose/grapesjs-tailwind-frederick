@@ -107,7 +107,7 @@ editor.runCommand('get-tailwindCss', { /* Options here */ });
 * CDN
   * `https://unpkg.com/grapesjs-tailwind`
 * NPM
-  * `npm i grapesjs-tailwind`
+  * `npm i grapesjs-tailwind-frederick`
 * GIT
   * `git clone https://github.com/Ju99ernaut/grapesjs-tailwind.git`
 
