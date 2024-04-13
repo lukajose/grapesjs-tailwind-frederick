@@ -1,6 +1,7 @@
 import en from './locale/en';
 import loadBlocks from './blocks';
 import loadCommands from './commands';
+import { components } from './blocks/tailwind';
 
 export default (editor, opts = {}) => {
   const options = {
@@ -58,3 +59,5 @@ export default (editor, opts = {}) => {
     frames.forEach(frame => frame.once('loaded', () => appendTailwindCss(frame)));
   });
 };
+
+export { components };

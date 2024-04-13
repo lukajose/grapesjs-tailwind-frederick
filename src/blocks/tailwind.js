@@ -653,3 +653,7 @@ export default (editor, options = {}) => {
     })
   })
 }
+
+const components = [...sources];
+
+export { components };
