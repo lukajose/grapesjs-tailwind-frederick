@@ -81,6 +81,7 @@ import { source as m2s } from './data/icons/testimonial-2'
 import { source as m3 } from './data/testimonial-3'
 import { source as m3s } from './data/icons/testimonial-3'
 import { source as p1 } from './data/pricing-1'
+import { source as p3 } from './data/pricing-3'
 import { source as p1s } from './data/icons/pricing-1'
 import { source as p2 } from './data/pricing-2'
 import { source as p2s } from './data/icons/pricing-2'
@@ -143,126 +144,126 @@ const sources = [
     category: 'Blog',
     // order: 1
   },
-  {
-    id: 'blog-block-2',
-    class: '',
-    label: b2s,
-    content: b2,
-    category: 'Blog',
-    // order: 1
-  },
-  {
-    id: 'blog-block-3',
-    class: '',
-    label: b3s,
-    content: b3,
-    category: 'Blog',
-    // order: 1
-  },
-  {
-    id: 'blog-block-4',
-    class: '',
-    label: b4s,
-    content: b4,
-    category: 'Blog',
-    // order: 1
-  },
-  {
-    id: 'blog-block-5',
-    class: '',
-    label: b5s,
-    content: b5,
-    category: 'Blog',
-    // order: 1
-  },
-  {
-    id: 'contact-block-1',
-    class: '',
-    label: c1s,
-    content: c1,
-    category: 'Contact',
-    // order: 1
-  },
-  {
-    id: 'contact-block-2',
-    class: '',
-    label: c2s,
-    content: c2,
-    category: 'Contact',
-    // order: 1
-  },
-  {
-    id: 'contact-block-3',
-    class: '',
-    label: c3s,
-    content: c3,
-    category: 'Contact',
-    // order: 1
-  },
-  {
-    id: 'content-block-1',
-    class: '',
-    label: d1s,
-    content: d1,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-2',
-    class: '',
-    label: d2s,
-    content: d2,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-3',
-    class: '',
-    label: d3s,
-    content: d3,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-4',
-    class: '',
-    label: d4s,
-    content: d4,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-5',
-    class: '',
-    label: d5s,
-    content: d5,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-6',
-    class: '',
-    label: d6s,
-    content: d6,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-7',
-    class: '',
-    label: d7s,
-    content: d7,
-    category: 'Content',
-    // order: 1
-  },
-  {
-    id: 'content-block-8',
-    class: '',
-    label: d8s,
-    content: d8,
-    category: 'Content',
-    // order: 1
-  },
+  // {
+  //   id: 'blog-block-2',
+  //   class: '',
+  //   label: b2s,
+  //   content: b2,
+  //   category: 'Blog',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'blog-block-3',
+  //   class: '',
+  //   label: b3s,
+  //   content: b3,
+  //   category: 'Blog',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'blog-block-4',
+  //   class: '',
+  //   label: b4s,
+  //   content: b4,
+  //   category: 'Blog',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'blog-block-5',
+  //   class: '',
+  //   label: b5s,
+  //   content: b5,
+  //   category: 'Blog',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'contact-block-1',
+  //   class: '',
+  //   label: c1s,
+  //   content: c1,
+  //   category: 'Contact',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'contact-block-2',
+  //   class: '',
+  //   label: c2s,
+  //   content: c2,
+  //   category: 'Contact',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'contact-block-3',
+  //   class: '',
+  //   label: c3s,
+  //   content: c3,
+  //   category: 'Contact',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-1',
+  //   class: '',
+  //   label: d1s,
+  //   content: d1,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-2',
+  //   class: '',
+  //   label: d2s,
+  //   content: d2,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-3',
+  //   class: '',
+  //   label: d3s,
+  //   content: d3,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-4',
+  //   class: '',
+  //   label: d4s,
+  //   content: d4,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-5',
+  //   class: '',
+  //   label: d5s,
+  //   content: d5,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-6',
+  //   class: '',
+  //   label: d6s,
+  //   content: d6,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-7',
+  //   class: '',
+  //   label: d7s,
+  //   content: d7,
+  //   category: 'Content',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'content-block-8',
+  //   class: '',
+  //   label: d8s,
+  //   content: d8,
+  //   category: 'Content',
+  //   // order: 1
+  // },
   {
     id: 'cta-block-1',
     class: '',
@@ -271,54 +272,54 @@ const sources = [
     category: 'CTA',
     // order: 1
   },
-  {
-    id: 'cta-block-2',
-    class: '',
-    label: a2s,
-    content: a2,
-    category: 'CTA',
-    // order: 1
-  },
-  {
-    id: 'cta-block-3',
-    class: '',
-    label: a3s,
-    content: a3,
-    category: 'CTA',
-    // order: 1
-  },
-  {
-    id: 'cta-block-4',
-    class: '',
-    label: a4s,
-    content: a4,
-    category: 'CTA',
-    // order: 1
-  },
-  {
-    id: 'commerce-block-1',
-    class: '',
-    label: e1s,
-    content: e1,
-    category: 'Commerce',
-    // order: 1
-  },
-  {
-    id: 'commerce-block-2',
-    class: '',
-    label: e2s,
-    content: e2,
-    category: 'Commerce',
-    // order: 1
-  },
-  {
-    id: 'commerce-block-3',
-    class: '',
-    label: e3s,
-    content: e3,
-    category: 'Commerce',
-    // order: 1
-  },
+  // {
+  //   id: 'cta-block-2',
+  //   class: '',
+  //   label: a2s,
+  //   content: a2,
+  //   category: 'CTA',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'cta-block-3',
+  //   class: '',
+  //   label: a3s,
+  //   content: a3,
+  //   category: 'CTA',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'cta-block-4',
+  //   class: '',
+  //   label: a4s,
+  //   content: a4,
+  //   category: 'CTA',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'commerce-block-1',
+  //   class: '',
+  //   label: e1s,
+  //   content: e1,
+  //   category: 'Commerce',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'commerce-block-2',
+  //   class: '',
+  //   label: e2s,
+  //   content: e2,
+  //   category: 'Commerce',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'commerce-block-3',
+  //   class: '',
+  //   label: e3s,
+  //   content: e3,
+  //   category: 'Commerce',
+  //   // order: 1
+  // },
   {
     id: 'feature-block-1',
     class: '',
@@ -327,62 +328,62 @@ const sources = [
     category: 'Features',
     // order: 1
   },
-  {
-    id: 'feature-block-2',
-    class: '',
-    label: f2s,
-    content: f2,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-3',
-    class: '',
-    label: f3s,
-    content: f3,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-4',
-    class: '',
-    label: f4s,
-    content: f4,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-5',
-    class: '',
-    label: f5s,
-    content: f5,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-6',
-    class: '',
-    label: f6s,
-    content: f6,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-7',
-    class: '',
-    label: f7s,
-    content: f7,
-    category: 'Features',
-    // order: 1
-  },
-  {
-    id: 'feature-block-8',
-    class: '',
-    label: f8s,
-    content: f8,
-    category: 'Features',
-    // order: 1
-  },
+  // {
+  //   id: 'feature-block-2',
+  //   class: '',
+  //   label: f2s,
+  //   content: f2,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-3',
+  //   class: '',
+  //   label: f3s,
+  //   content: f3,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-4',
+  //   class: '',
+  //   label: f4s,
+  //   content: f4,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-5',
+  //   class: '',
+  //   label: f5s,
+  //   content: f5,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-6',
+  //   class: '',
+  //   label: f6s,
+  //   content: f6,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-7',
+  //   class: '',
+  //   label: f7s,
+  //   content: f7,
+  //   category: 'Features',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'feature-block-8',
+  //   class: '',
+  //   label: f8s,
+  //   content: f8,
+  //   category: 'Features',
+  //   // order: 1
+  // },
   {
     id: 'footer-block-1',
     class: '',
@@ -391,62 +392,62 @@ const sources = [
     category: 'Footer',
     // order: 1
   },
-  {
-    id: 'footer-block-2',
-    class: '',
-    label: z2s,
-    content: z2,
-    category: 'Footer',
-    // order: 1
-  },
-  {
-    id: 'footer-block-3',
-    class: '',
-    label: z3s,
-    content: z3,
-    category: 'Footer',
-    // order: 1
-  },
-  {
-    id: 'footer-block-4',
-    class: '',
-    label: z4s,
-    content: z4,
-    category: 'Footer',
-    // order: 1
-  },
-  {
-    id: 'footer-block-5',
-    class: '',
-    label: z5s,
-    content: z5,
-    category: 'Footer',
-    // order: 1
-  },
-  {
-    id: 'gallery-block-1',
-    class: '',
-    label: g1s,
-    content: g1,
-    category: 'Gallery',
-    // order: 1
-  },
-  {
-    id: 'gallery-block-2',
-    class: '',
-    label: g2s,
-    content: g2,
-    category: 'Gallery',
-    // order: 1
-  },
-  {
-    id: 'gallery-block-3',
-    class: '',
-    label: g3s,
-    content: g3,
-    category: 'Gallery',
-    // order: 1
-  },
+  // {
+  //   id: 'footer-block-2',
+  //   class: '',
+  //   label: z2s,
+  //   content: z2,
+  //   category: 'Footer',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'footer-block-3',
+  //   class: '',
+  //   label: z3s,
+  //   content: z3,
+  //   category: 'Footer',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'footer-block-4',
+  //   class: '',
+  //   label: z4s,
+  //   content: z4,
+  //   category: 'Footer',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'footer-block-5',
+  //   class: '',
+  //   label: z5s,
+  //   content: z5,
+  //   category: 'Footer',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'gallery-block-1',
+  //   class: '',
+  //   label: g1s,
+  //   content: g1,
+  //   category: 'Gallery',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'gallery-block-2',
+  //   class: '',
+  //   label: g2s,
+  //   content: g2,
+  //   category: 'Gallery',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'gallery-block-3',
+  //   class: '',
+  //   label: g3s,
+  //   content: g3,
+  //   category: 'Gallery',
+  //   // order: 1
+  // },
   {
     id: 'header-block-1',
     class: '',
@@ -455,30 +456,30 @@ const sources = [
     category: 'Header',
     // order: 1
   },
-  {
-    id: 'header-block-2',
-    class: '',
-    label: h2s,
-    content: h2,
-    category: 'Header',
-    // order: 1
-  },
-  {
-    id: 'header-block-3',
-    class: '',
-    label: h3s,
-    content: h3,
-    category: 'Header',
-    // order: 1
-  },
-  {
-    id: 'header-block-4',
-    class: '',
-    label: h4s,
-    content: h4,
-    category: 'Header',
-    // order: 1
-  },
+  // {
+  //   id: 'header-block-2',
+  //   class: '',
+  //   label: h2s,
+  //   content: h2,
+  //   category: 'Header',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'header-block-3',
+  //   class: '',
+  //   label: h3s,
+  //   content: h3,
+  //   category: 'Header',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'header-block-4',
+  //   class: '',
+  //   label: h4s,
+  //   content: h4,
+  //   category: 'Header',
+  //   // order: 1
+  // },
   {
     id: 'hero-block-1',
     class: '',
@@ -487,94 +488,102 @@ const sources = [
     category: 'Hero',
     // order: 1
   },
+  // {
+  //   id: 'hero-block-2',
+  //   class: '',
+  //   label: r2s,
+  //   content: r2,
+  //   category: 'Hero',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'hero-block-3',
+  //   class: '',
+  //   label: r3s,
+  //   content: r3,
+  //   category: 'Hero',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'hero-block-4',
+  //   class: '',
+  //   label: r4s,
+  //   content: r4,
+  //   category: 'Hero',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'hero-block-5',
+  //   class: '',
+  //   label: r5s,
+  //   content: r5,
+  //   category: 'Hero',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'hero-block-6',
+  //   class: '',
+  //   label: r6s,
+  //   content: r6,
+  //   category: 'Hero',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'pricing-block-1',
+  //   class: '',
+  //   label: p1s,
+  //   content: p1,
+  //   category: 'Pricing',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'pricing-block-2',
+  //   class: '',
+  //   label: p2s,
+  //   content: p2,
+  //   category: 'Pricing',
+  //   // order: 1
+  // },
   {
-    id: 'hero-block-2',
-    class: '',
-    label: r2s,
-    content: r2,
-    category: 'Hero',
-    // order: 1
-  },
-  {
-    id: 'hero-block-3',
-    class: '',
-    label: r3s,
-    content: r3,
-    category: 'Hero',
-    // order: 1
-  },
-  {
-    id: 'hero-block-4',
-    class: '',
-    label: r4s,
-    content: r4,
-    category: 'Hero',
-    // order: 1
-  },
-  {
-    id: 'hero-block-5',
-    class: '',
-    label: r5s,
-    content: r5,
-    category: 'Hero',
-    // order: 1
-  },
-  {
-    id: 'hero-block-6',
-    class: '',
-    label: r6s,
-    content: r6,
-    category: 'Hero',
-    // order: 1
-  },
-  {
-    id: 'pricing-block-1',
+    id: 'pricing-block-3',
     class: '',
     label: p1s,
-    content: p1,
+    content: p3,
     category: 'Pricing',
     // order: 1
   },
-  {
-    id: 'pricing-block-2',
-    class: '',
-    label: p2s,
-    content: p2,
-    category: 'Pricing',
-    // order: 1
-  },
-  {
-    id: 'statistic-block-1',
-    class: '',
-    label: s1s,
-    content: s1,
-    category: 'Statistics',
-    // order: 1
-  },
-  {
-    id: 'statistic-block-2',
-    class: '',
-    label: s2s,
-    content: s2,
-    category: 'Statistics',
-    // order: 1
-  },
-  {
-    id: 'statistic-block-3',
-    class: '',
-    label: s3s,
-    content: s3,
-    category: 'Statistics',
-    // order: 1
-  },
-  {
-    id: 'step-block-1',
-    class: '',
-    label: q1s,
-    content: q1,
-    category: 'Steps',
-    // order: 1
-  },
+  // {
+  //   id: 'statistic-block-1',
+  //   class: '',
+  //   label: s1s,
+  //   content: s1,
+  //   category: 'Statistics',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'statistic-block-2',
+  //   class: '',
+  //   label: s2s,
+  //   content: s2,
+  //   category: 'Statistics',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'statistic-block-3',
+  //   class: '',
+  //   label: s3s,
+  //   content: s3,
+  //   category: 'Statistics',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'step-block-1',
+  //   class: '',
+  //   label: q1s,
+  //   content: q1,
+  //   category: 'Steps',
+  //   // order: 1
+  // },
   // {
   //   id: 'step-block-2',
   //   class: '',
@@ -583,62 +592,62 @@ const sources = [
   //   category: 'Steps',
   //   // order: 1
   // },
-  {
-    id: 'step-block-3',
-    class: '',
-    label: q3s,
-    content: q3,
-    category: 'Steps',
-    // order: 1
-  },
-  {
-    id: 'team-block-1',
-    class: '',
-    label: t1s,
-    content: t1,
-    category: 'Team',
-    // order: 1
-  },
-  {
-    id: 'team-block-2',
-    class: '',
-    label: t2s,
-    content: t2,
-    category: 'Team',
-    // order: 1
-  },
-  {
-    id: 'team-block-3',
-    class: '',
-    label: t3s,
-    content: t3,
-    category: 'Team',
-    // order: 1
-  },
-  {
-    id: 'testimonial-block-1',
-    class: '',
-    label: m1s,
-    content: m1,
-    category: 'Testimonials',
-    // order: 1
-  },
-  {
-    id: 'testimonial-block-2',
-    class: '',
-    label: m2s,
-    content: m2,
-    category: 'Testimonials',
-    // order: 1
-  },
-  {
-    id: 'testimonial-block-3',
-    class: '',
-    label: m3s,
-    content: m3,
-    category: 'Testimonials',
-    // order: 1
-  },
+  // {
+  //   id: 'step-block-3',
+  //   class: '',
+  //   label: q3s,
+  //   content: q3,
+  //   category: 'Steps',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'team-block-1',
+  //   class: '',
+  //   label: t1s,
+  //   content: t1,
+  //   category: 'Team',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'team-block-2',
+  //   class: '',
+  //   label: t2s,
+  //   content: t2,
+  //   category: 'Team',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'team-block-3',
+  //   class: '',
+  //   label: t3s,
+  //   content: t3,
+  //   category: 'Team',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'testimonial-block-1',
+  //   class: '',
+  //   label: m1s,
+  //   content: m1,
+  //   category: 'Testimonials',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'testimonial-block-2',
+  //   class: '',
+  //   label: m2s,
+  //   content: m2,
+  //   category: 'Testimonials',
+  //   // order: 1
+  // },
+  // {
+  //   id: 'testimonial-block-3',
+  //   class: '',
+  //   label: m3s,
+  //   content: m3,
+  //   category: 'Testimonials',
+  //   // order: 1
+  // },
 ]
 
 export default (editor, options = {}) => {
