@@ -35,7 +35,28 @@
             outline: none;
             box-shadow: 0 0 0 2pt #c5c5c575;
         }
-        
+
+        * {
+            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
+        }
+        *:hover {
+            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
+        }
+        a, button, input[type="button"], input[type="submit"], input[type="reset"], [role="button"] {
+            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
+        }
+
+        .pointer-element {
+            padding: 20px;
+            background-color: lightblue;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .pointer-element:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
 
         
     </style>
@@ -43,7 +64,7 @@
 
 <body>
 
-    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-gray-900">
+    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-gray-900 ">
         <div class="text-base font-bold justify-between text-center dark:bg-gray-900 dark:text-white">Hello world!</div>
 
     </div>

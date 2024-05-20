@@ -83,6 +83,7 @@ import { source as m3s } from './data/icons/testimonial-3'
 import { source as p1 } from './data/pricing-1'
 import { source as p3 } from './data/pricing-3'
 import { source as p1s } from './data/icons/pricing-1'
+import { source as dmb, script as scdm } from './data/dark-mode-button';
 import { source as p2 } from './data/pricing-2'
 import { source as p2s } from './data/icons/pricing-2'
 import { source as q1 } from './data/step-1'
@@ -142,6 +143,16 @@ const sources = [
     // label: 'b2s().outerHTML',
     content: b1,
     category: 'Blog',
+    // order: 1
+  },
+  {
+    id: 'dark-mode-button-1',
+    // class: 'fa fa-map-o',
+    class: '',
+    label: b1s,
+    content: dmb,
+    category: 'Dark mode',
+    script: scdm
     // order: 1
   },
   // {
@@ -659,6 +670,7 @@ export default (editor, options = {}) => {
       attributes: { class: `${s.class} block-full-width` },
       content: s.content,
       category: { label: s.category, open: s.category === options.openCategory },
+      script: s.script
     })
   })
 }

@@ -10,8 +10,15 @@ export default (editor, opts = {}) => {
       // default options
       tailwindPlayCdn: 'https://cdn.tailwindcss.com',
       plugins: [],
-      config: {},
-      cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; }`,
+      config: {
+        darkMode: ['selector', '[data-mode="dark"]'],
+      },
+      cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
+        cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
+        *:hover {
+          cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
+        }
+      }`,
       changeThemeText: 'Change Theme',
       openCategory: 'Blog',
     }, ...opts
@@ -44,6 +51,7 @@ export default (editor, opts = {}) => {
 
     const cssStyle = document.createElement('style');
     cssStyle.innerHTML = cover;
+    
 
     // checks iframe is ready before loading Tailwind CSS - issue with firefox
     const f = setInterval(() => {
@@ -59,6 +67,7 @@ export default (editor, opts = {}) => {
   editor.Canvas.getModel()['on']('change:frames', (m, frames) => {
     frames.forEach((frame) => frame.once('loaded', () => appendTailwindCss(frame)));
   });
+
 };
 
 
