@@ -15,6 +15,7 @@ export const source = `<div class="flex flex-col justify-center ml-3">
 
 export const script = () => {
     const lightSwitches = document.querySelectorAll('.light-switch');
+    console.info("lightswitches:", lightSwitches);
     if (lightSwitches.length > 0) {
         lightSwitches.forEach((lightSwitch, i) => {
             if (localStorage.getItem('dark-mode') === 'true') {

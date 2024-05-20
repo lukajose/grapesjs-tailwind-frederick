@@ -65,8 +65,3 @@ export const source = `<section class="text-gray-600 body-font dark:bg-gray-900 
 </div>
 </section>
 `;
-
-
-export const getSource = ({ loading = true }) => {
-
-}
