@@ -58,7 +58,7 @@ export default (editor, opts = {}) => {
         <circle transform-origin="center" fill="none" opacity=".2" stroke="#F547E9" stroke-width="15" stroke-linecap="round" cx="100" cy="100" r="70"></circle>
       </svg>`;
 
-  document.body.appendChild(spinnerContainer);
+  // document.body.appendChild(spinnerContainer);
   const appendTailwindCss = async (frame) => {
     const iframe = frame?.view?.getEl();
 
@@ -83,7 +83,7 @@ export default (editor, opts = {}) => {
       if (doc && doc.readyState && doc.readyState === 'complete') {
         doc.head.appendChild(script);
         doc.head.appendChild(cssStyle);
-        document.body.querySelector(`#spinner-container`).remove();
+        // document.body.querySelector(`#spinner-container`).remove();
         setTimeout(() => {
           iframe.style.visibility = 'visible';
         }, 100);
@@ -93,7 +93,6 @@ export default (editor, opts = {}) => {
   }
 
   editor.Canvas.getModel()['on']('change:frames', (m, frames) => {
-    
     frames.forEach((frame) => frame.once('loaded', () => appendTailwindCss(frame)));
   });
 
