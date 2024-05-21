@@ -186,6 +186,15 @@ $ npm run build
 
 
 
+## Deployment 
+
+```sh
+npm run build
+npm run bump
+npm publish
+```
+
+
 ## License
 
 MIT
