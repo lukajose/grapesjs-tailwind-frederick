@@ -59,7 +59,6 @@ export default (editor, opts = {}) => {
       </svg>`;
 
   document.body.appendChild(spinnerContainer);
-
   const appendTailwindCss = async (frame) => {
     const iframe = frame?.view?.getEl();
 
@@ -84,8 +83,8 @@ export default (editor, opts = {}) => {
       if (doc && doc.readyState && doc.readyState === 'complete') {
         doc.head.appendChild(script);
         doc.head.appendChild(cssStyle);
+        document.body.querySelector(`#spinner-container`).remove();
         setTimeout(() => {
-          document.body.removeChild(spinnerContainer);
           iframe.style.visibility = 'visible';
         }, 100);
         clearInterval(f);
