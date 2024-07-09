@@ -6,6 +6,7 @@
     <title>Grapesjs Tailwind</title>
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
     <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-touch"></script>
     <style>
         body,
         html {
@@ -13,38 +14,40 @@
             margin: 0;
         }
 
-        .gjs-block {
+        /* .gjs-block {
             padding: 0 !important;
             width: 100% !important;
             min-height: auto !important;
-        }
+        } */
 
         .gjs-block svg {
             width: 100%;
         }
 
         .change-theme-button {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            border-radius: 10%;
             margin: 5px;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            border: rgb(85, 85, 85);
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        .change-theme-button:hover {
+          opacity: 50%;
         }
 
         .change-theme-button:focus {
             /* background-color: yellow; */
             outline: none;
-            box-shadow: 0 0 0 2pt #c5c5c575;
+            box-shadow: 0 0 0 0pt #e4e3e375;
         }
 
-        * {
-            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
-        }
-        *:hover {
-            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
-        }
-        a, button, input[type="button"], input[type="submit"], input[type="reset"], [role="button"] {
-            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
-        }
+
 
         .pointer-element {
             padding: 20px;
@@ -59,22 +62,22 @@
         }
 
         
+        
+
+
+        
     </style>
 </head>
 
 <body>
 
-    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-gray-900 ">
-        <div class="text-base font-bold justify-between text-center dark:bg-gray-900 dark:text-white">Hello world!</div>
-
-    </div>
+    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-gray-900 "></div>
 
 
     <script type="text/javascript">
         const escapeName = (name) => `${name}`.trim().replace(/([^a-z0-9\w-:/]+)/gi, '-');
 
         window.editor = grapesjs.init({
-            allowScript:1,
             height: '100%',
             container: '#gjs',
             showOffsets: true,
@@ -82,10 +85,17 @@
             noticeOnUnload: false,
             storageManager: false,
             selectorManager: { escapeName },
-            plugins: ['grapesjs-tailwind-frederick'],
+            plugins: ['grapesjs-tailwind-frederick', 'grapesjs-touch'],
             pluginsOpts: {
-                'grapesjs-tailwind-frederick': { /* Test here your options  */ }
-            }
+                'grapesjs-tailwind-frederick': { /* Test here your options  */ },
+                'grapesjs-touch': {}
+            },
+            canvasCss: `
+                  .gjs-selected {
+                    outline: 3px solid #d8b4fe !important;
+                  }
+                  .gjs-panel { display: none; }
+            `,
         });
 
 
@@ -93,13 +103,13 @@
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-12">
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY ONE</span>
+        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY ONE</span>
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title one for category</h2>
         <p class="leading-relaxed mb-8">
             A description for category one, should describe what the category is about. No more than 30 words long.
         </p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-indigo-500 inline-flex items-center">Learn More
+          <a class="text-primary-500 inline-flex items-center">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
@@ -126,13 +136,13 @@
         </a>
       </div>
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY TWO</span>
+        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY TWO</span>
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title two for category</h2>
         <p class="leading-relaxed mb-8">
             A description for category two, should describe what the category is about. No more than 30 words long.
         </p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-indigo-500 inline-flex items-center">Learn More
+          <a class="text-primary-500 inline-flex items-center">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>

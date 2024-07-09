@@ -2,6 +2,7 @@ import en from './locale/en';
 import loadBlocks from './blocks';
 import loadCommands from './commands';
 import { components } from './blocks/tailwind';
+import colors from './colors';
 
 export default (editor, opts = {}) => {
   const options = {
@@ -12,13 +13,70 @@ export default (editor, opts = {}) => {
       plugins: [],
       config: {
         darkMode: ['selector', '[data-mode="dark"]'],
+        theme: {
+          screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
+          fontFamily: {
+            sans: ['Graphik', 'sans-serif'],
+            serif: ['Merriweather', 'serif'],
+          },
+          extend: {
+            spacing: {
+              '128': '32rem',
+              '144': '36rem',
+            },
+            colors: {
+              primary: colors.gray,
+            },
+            borderRadius: {
+              '4xl': '2rem',
+            }
+          }
+        }
+
+        
+
       },
       cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
         cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
         *:hover {
           cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
         }
-      }`,
+      }
+
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+ 
+@layer base {
+  :root {
+ 
+    --primary: red;
+    --primary-foreground: red;
+ 
+
+  }
+ 
+  .dark {
+    --primary: red;
+    --primary-foreground: 222.2 47.4% 1.2%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+      `,
       changeThemeText: 'Change Theme',
       openCategory: 'Blog',
     }, ...opts
@@ -100,4 +158,4 @@ export default (editor, opts = {}) => {
 
 
 
-export { components };
+export { components, colors };

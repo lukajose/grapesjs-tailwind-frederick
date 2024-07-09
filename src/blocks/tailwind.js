@@ -38,6 +38,10 @@ import { source as d7 } from './data/content-7'
 import { source as d7s } from './data/icons/content-7'
 import { source as d8 } from './data/content-8'
 import { source as d8s } from './data/icons/content-8'
+import { source as logo1 } from './data/logo-1.js'
+import { source as logo1s } from './data/icons/logo-1.js'
+import { source as logo2 } from './data/logo-2.js'
+import { source as logo2s } from './data/icons/logo-2.js'
 import { source as e1 } from './data/ecommerce-1'
 import { source as e1s } from './data/icons/ecommerce-1'
 import { source as e2 } from './data/ecommerce-2'
@@ -658,7 +662,22 @@ const sources = [
     category: 'Testimonials',
     // order: 1
   },
+  {
+    id: 'logo-1',
+    class: '',
+    label: logo1s,
+    content: logo1,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-2',
+    class: '',
+    label: logo2s,
+    content: logo2,
+    category: 'Logos'
+  }
 ]
+
 
 export default (editor, options = {}) => {
   const bm = editor.Blocks
@@ -676,4 +695,42 @@ export default (editor, options = {}) => {
 
 const components = [...sources];
 
-export { components };
+
+
+
+function hexToRgb(hex) {
+  let bigint = parseInt(hex.slice(1), 16);
+  let r = (bigint >> 16) & 255;
+  let g = (bigint >> 8) & 255;
+  let b = bigint & 255;
+  return [r, g, b];
+}
+
+function rgbToHex(r, g, b) {
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+function shadeColor(color, percent) {
+  let [r, g, b] = hexToRgb(color);
+  r = Math.min(255, Math.max(0, r + (r * percent)));
+  g = Math.min(255, Math.max(0, g + (g * percent)));
+  b = Math.min(255, Math.max(0, b + (b * percent)));
+  return rgbToHex(Math.round(r), Math.round(g), Math.round(b));
+}
+
+function generateShades(primaryColor) {
+  return {
+      50: shadeColor(primaryColor, 0.9),
+      100: shadeColor(primaryColor, 0.7),
+      200: shadeColor(primaryColor, 0.5),
+      300: shadeColor(primaryColor, 0.3),
+      400: shadeColor(primaryColor, 0.1),
+      500: primaryColor,
+      600: shadeColor(primaryColor, -0.1),
+      700: shadeColor(primaryColor, -0.3),
+      800: shadeColor(primaryColor, -0.5),
+      900: shadeColor(primaryColor, -0.7),
+  };
+}
+
+export { components, generateShades };

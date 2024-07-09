@@ -6,7 +6,7 @@ export const source = `<section class="text-gray-600 body-font dark:bg-gray-900 
         <h2 class="tracking-widest text-xs title-font font-medium text-gray-600 mb-1 dark:text-gray-100">CATEGORY 1</h2>
         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 dark:text-gray-500">Beautiful subheader 1</h1>
         <p class="leading-relaxed mb-3 dark:text-gray-300">Describe your product here, what is your top 1 feature</p>
-        <a class="text-indigo-500 inline-flex items-center dark:text-indigo-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+        <a class="text-primary-500 inline-flex items-center dark:text-primary-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
           <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 dark:border-gray-600">
             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -26,7 +26,7 @@ export const source = `<section class="text-gray-600 body-font dark:bg-gray-900 
         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 dark:text-gray-100">CATEGORY 2</h2>
         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 dark:text-gray-500">Beautiful subheader 2</h1>
         <p class="leading-relaxed mb-3 dark:text-gray-300">Describe your product here, what is your top 2 feature</p>
-        <a class="text-indigo-500 inline-flex items-center dark:text-indigo-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+        <a class="text-primary-500 inline-flex items-center dark:text-primary-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
           <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 dark:border-gray-600">
             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ export const source = `<section class="text-gray-600 body-font dark:bg-gray-900 
         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 dark:text-gray-100">CATEGORY 3</h2>
         <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 dark:text-gray-500 ">Beautiful subheader 3</h1>
         <p class="leading-relaxed mb-3 dark:text-gray-300">Describe your product here, what is your top 3 feature</p>
-        <a class="text-indigo-500 inline-flex items-center dark:text-indigo-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+        <a class="text-primary-500 inline-flex items-center dark:text-primary-300">Learn More<svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg></a>
         <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
           <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200 dark:border-gray-600">
             <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">

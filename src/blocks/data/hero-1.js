@@ -8,7 +8,7 @@ export const source = `
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-gray-100">Hero title that describes your business in one sentence.</h1>
       <p class="dark:text-gray-400 mb-8 leading-relaxed">Subhero title that gives a more detailed description of what the business is about.</p>
       <div class="flex justify-center">
-        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+        <button class="inline-flex text-white bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded text-lg">
           <span class="text-sm sm:text-base">Start now</span>
         </button>
         <button class="ml-4 inline-flex text-gray-700 bg-gray-100 dark:bg-gray-900 dark:border dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
