@@ -64,9 +64,9 @@ export const source = `
         <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
           <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
             <label for="footer-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
-            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-primary-200 focus:border-primary-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
           </div>
-          <button type="submit" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"><span>Subscribe</span></button>
+          <button type="submit" class="inline-flex text-white bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded"><span>Subscribe</span></button>
           <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Subscribe now <br class="lg:block hidden"> to our newsletter.</p>
         </div>
       </form>

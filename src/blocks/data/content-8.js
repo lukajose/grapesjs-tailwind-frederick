@@ -3,7 +3,7 @@ export const source = `
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col">
       <div class="h-1 bg-gray-200 rounded overflow-hidden">
-        <div class="w-24 h-full bg-indigo-500"></div>
+        <div class="w-24 h-full bg-primary-500"></div>
       </div>
       <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
         <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Generate a main headline for this section</h1>
@@ -19,7 +19,7 @@ export const source = `
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the first content example, highlighting key points and engaging the reader.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+        <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
@@ -33,7 +33,7 @@ export const source = `
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the second content example, highlighting key points and engaging the reader.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+        <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
@@ -47,7 +47,7 @@ export const source = `
         </div>
         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the third content example, highlighting key points and engaging the reader.</p>
-        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+        <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>

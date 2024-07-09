@@ -10,7 +10,7 @@ export const source = `
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Generate a headline for the first content example</h2>
         <p class="leading-relaxed text-base">Generate a brief description for the first content example, highlighting key points and engaging the reader.</p>
-        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><span>CTA button</span></button>
+        <button class="flex mx-auto mt-6 text-white bg-primary-500 border-0 py-2 px-5 focus:outline-none hover:bg-primary-600 rounded"><span>CTA button</span></button>
       </div>
       
       <!-- Example 2 -->
@@ -20,7 +20,7 @@ export const source = `
         </div>
         <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Generate a headline for the second content example</h2>
         <p class="leading-relaxed text-base">Generate a brief description for the second content example, highlighting key points and engaging the reader.</p>
-        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><span>CTA button</span></button>
+        <button class="flex mx-auto mt-6 text-white bg-primary-500 border-0 py-2 px-5 focus:outline-none hover:bg-primary-600 rounded"><span>CTA button</span></button>
       </div>
       
     </div>

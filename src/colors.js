@@ -207,7 +207,7 @@ const colors = {
     900: '#1e3a8a',
     950: '#172554',
   },
-  indigo: {
+  primary: {
     50: '#eef2ff',
     100: '#e0e7ff',
     200: '#c7d2fe',

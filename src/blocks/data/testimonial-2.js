@@ -7,7 +7,7 @@ export const source = `
       </svg>
       <!-- Replace this paragraph with the actual testimonial text -->
       <p class="leading-relaxed text-lg">Testimonial content goes here. Provide a detailed and engaging testimonial that highlights the customer's experience and satisfaction with your product or service.</p>
-      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+      <span class="inline-block h-1 w-10 rounded bg-primary-500 mt-8 mb-6"></span>
       <!-- Replace with the customer's name -->
       <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">Name of testimonial</h2>
       <!-- Replace with the customer's job title -->

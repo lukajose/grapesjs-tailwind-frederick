@@ -3,13 +3,13 @@ export const source = `
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-12">
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY ONE</span>
+        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY ONE</span>
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title one for category</h2>
         <p class="leading-relaxed mb-8">
             A description for category one, should describe what the category is about. No more than 30 words long.
         </p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-indigo-500 inline-flex items-center">Learn More
+          <a class="text-primary-500 inline-flex items-center">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
@@ -36,13 +36,13 @@ export const source = `
         </a>
       </div>
       <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest">CATEGORY TWO</span>
+        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY TWO</span>
         <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title two for category</h2>
         <p class="leading-relaxed mb-8">
             A description for category two, should describe what the category is about. No more than 30 words long.
         </p>
         <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-indigo-500 inline-flex items-center">Learn More
+          <a class="text-primary-500 inline-flex items-center">Learn More
             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>

@@ -11,7 +11,7 @@ export const source = `
             <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
           </div>
           <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY 1</h2>
+            <h2 class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1">CATEGORY 1</h2>
             <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Generate a headline that highlights a business trend or innovation</h1>
             <p class="leading-relaxed mb-5">Provide an engaging and informative summary of the business trend or innovation mentioned in the headline, emphasizing its impact and relevance to the industry</p>
             <a class="inline-flex items-center">
@@ -32,7 +32,7 @@ export const source = `
             <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
           </div>
           <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY 2</h2>
+            <h2 class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1">CATEGORY 2</h2>
             <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Generate a headline that discusses a business success story or case study</h1>
             <p class="leading-relaxed mb-5">Summarize the key points of the business success story or case study, including the challenges faced, strategies implemented, and results achieved</p>
             <a class="inline-flex items-center">
@@ -53,7 +53,7 @@ export const source = `
             <span class="font-medium text-lg text-gray-800 title-font leading-none">18</span>
           </div>
           <div class="flex-grow pl-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">CATEGORY 3</h2>
+            <h2 class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1">CATEGORY 3</h2>
             <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Generate a headline that provides tips or advice for business owners</h1>
             <p class="leading-relaxed mb-5">Offer practical and actionable tips or advice for business owners, helping them to improve their operations, marketing, or overall strategy</p>
             <a class="inline-flex items-center">

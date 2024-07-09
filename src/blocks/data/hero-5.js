@@ -15,10 +15,10 @@ export const source = `
           <!-- Replace PLACEHOLDER with the appropriate input field label -->
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
             <label for="hero-field" class="leading-7 text-sm text-gray-600">Placeholder</label>
-            <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+            <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-primary-200 focus:bg-transparent focus:border-primary-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
           </div>
           <!-- Replace BUTTON with appropriate text for the call to action -->
-          <button type="submit" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><span>Start now</span></button>
+          <button type="submit" class="inline-flex text-white bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded text-lg"><span>Start now</span></button>
         </div>
       </form>
       <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Subscribe now to our newsletter.</p>

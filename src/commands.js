@@ -47,7 +47,7 @@ const themeList = [
     { name: 'cyan', color: colors.cyan },
     { name: 'sky', color: colors.sky },
     { name: 'blue', color: colors.blue },
-    { name: 'indigo', color: colors.indigo },
+    { name: 'primary', color: colors.primary },
     { name: 'violet', color: colors.violet },
     { name: 'purple', color: colors.purple },
     { name: 'fuchsia', color: colors.fuchsia },
@@ -57,7 +57,7 @@ const themeList = [
 ]
 
 const colorRegex = new RegExp(
-    /(bg|ring)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emarald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-(\d\d\d)/,
+    /(bg|ring)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emarald|teal|cyan|sky|blue|primary|violet|purple|fuchsia|pink|rose)-(\d\d\d)/,
     "g"
 );
 

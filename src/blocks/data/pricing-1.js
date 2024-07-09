@@ -47,8 +47,8 @@ export const source = `
         </div>
       </div>
       <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-        <div class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden">
-          <span class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+        <div class="h-full p-6 rounded-lg border-2 border-primary-500 flex flex-col relative overflow-hidden">
+          <span class="bg-primary-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
           <!-- Replace PRO with the appropriate plan name -->
           <h2 class="text-sm tracking-widest title-font mb-1 font-medium">PRO</h2>
           <!-- Replace $38 with the appropriate price -->
@@ -85,7 +85,7 @@ export const source = `
             </span>Feature four
           </p>
           <!-- Replace BUTTON with appropriate text for the call to action -->
-          <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded"><span>Get started</span>
+          <button class="flex items-center mt-auto text-white bg-primary-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-primary-600 rounded"><span>Get started</span>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
