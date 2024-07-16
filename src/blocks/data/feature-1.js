@@ -1,7 +1,7 @@
 export const source = `
 <section class="text-foreground-600 body-font dark:bg-gray-900">
   <div class="container px-5  mx-auto">
-    <h1 class="px-4 py-8 text-center text-2xl font-bold tracking-tighter sm:text-5xl xl:text-4xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">
+    <h1 class="px-4 py-8 text-center text-xl font-bold tracking-tighter sm:text-3xl xl:text-2xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">
       Generate a title for the feature section<br class="hidden sm:block">Include features below
     </h1>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">

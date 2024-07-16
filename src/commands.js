@@ -1,60 +1,7 @@
 //import purify from './purifycss'
-
-import { generateShades } from "./blocks/tailwind";
 import colors from "./colors";
+import themes from './themes';
 
-const themes = {
-    frederickClip: {
-        stop1: '#A87FFF',
-        stop2: '#DC8AF9',
-        stop3: '#000000',
-        stop4: '#000000'
-    },
-    frederickBase: {
-        stop1: '#1D976C',
-        stop2: '#93F9B9',
-        stop3: '#000000',
-        stop4: '#f3f4f6'
-    },
-    frederickBest: { 
-        stop1: '#000000',
-        stop2: '#1e293b',
-        stop3: '#d1d5db',
-        stop4: '#f3f4f6'
-    },
-    frederickBestDark: {
-        stop1: '#0000',
-        stop2: '#d1d5db',
-        stop3: '#d1d5db',
-        stop4: '#f3f4f6'
-    },
-    frederickCan: {
-        stop1: '#6E3EB4',
-        stop2: '#6E3EB4',
-        stop3: '#6E3EB4',
-        stop4: '#6E3EB4'
-    }
-};
-
-
-const themeList = [
-    // { name: 'slate', color: colors.slate,  ...themes.frederickBestDark },
-    { name: 'yellow', color: colors.lime },
-    { name: 'lime', color: colors.lime },
-    { name: 'green', color: colors.green },
-    { name: 'emerald', color: colors.teal },
-    { name: 'teal', color: colors.teal },
-    { name: 'cyan', color: colors.cyan },
-    { name: 'sky', color: colors.sky },
-    { name: 'blue', color: colors.blue },
-    { name: 'primary', color: colors.primary },
-    { name: 'violet', color: colors.violet },
-    { name: 'purple', color: colors.purple },
-    { name: 'fuchsia', color: colors.fuchsia },
-    { name: 'pink', color: colors.pink },
-    { name: 'rose', color: colors.rose },
-
-]
 
 const colorRegex = new RegExp(
     /(bg|ring)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emarald|teal|cyan|sky|blue|primary|violet|purple|fuchsia|pink|rose)-(\d\d\d)/,
@@ -186,10 +133,11 @@ export function changeSvgColors(svg, colors) {
 
 
 
-const updateThemeColor = (editor, color) => {
+const updateThemeColor = (editor, colors) => {
     const wrapper = editor.DomComponents.getWrapper();
     const componentsAll = getAllComponents(wrapper, []);
     const iframe = editor.Canvas.getFrameEl();
+
     // const [ item ] = themeList.filter((item => item.name === color ))
     // config = {...iframe.contentWindow.tailwind.config }
     const config = {
@@ -210,10 +158,7 @@ const updateThemeColor = (editor, color) => {
               '128': '32rem',
               '144': '36rem',
             },
-            colors: {
-              primary: color,
-              secondary: generateShades("#64748b")
-            },
+            colors,
             borderRadius: {
               '4xl': '2rem',
             }
@@ -223,15 +168,9 @@ const updateThemeColor = (editor, color) => {
     iframe.contentWindow.tailwind.config = config;
     componentsAll.forEach((c) => {
         const cl = c.getAttributes().class;
-        // console.log("cl:", cl)
-        // if (typeof cl === "string" && cl.match(colorRegex)) {
-        //     c.setClass(cl.replace(colorRegex, `$1-${color}-$3`));
-        // }
         if(cl === "logo") {
             const svg = c.toHTML();
-            // console.log("color:", color);
-            // const [ item ] = themeList.filter((item => item.name === color ))
-            const newSvg = changeSvgColors(svg, { stop1: color[500] });
+            const newSvg = changeSvgColors(svg, { stop1: colors.primary[500] });
             c.replaceWith(newSvg);
         }
     });
@@ -239,17 +178,19 @@ const updateThemeColor = (editor, color) => {
 
 export default (editor, opts = { color : colors.red }) => {
     const cm = editor.Commands;
+    const defaultTheme = themes.base;
 
     cm.add('update-theme', {
-        run(_, sender, options = { colors : colors.slate }) {
-            updateThemeColor(editor,options.colors)
+        run(_, sender, options = { colors :  defaultTheme  }) {
+            console.log("options:", options.colors)
+            updateThemeColor(editor, options.colors )
         },
     })
 
     cm.add('open-update-theme', {
         run(_, sender) {
             // updateThemeColor(editor,colors.red)
-            editor.runCommand('update-theme', { colors: colors.emerald });
+            editor.runCommand('update-theme', { colors: themes.base });
         },
     })
 
