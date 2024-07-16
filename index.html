@@ -6,6 +6,7 @@
     <title>Grapesjs Tailwind</title>
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
     <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-plugin-forms"></script>
     <script src="https://unpkg.com/grapesjs-touch"></script>
     <style>
         body,
@@ -62,6 +63,10 @@
         }
 
         
+
+        #gjs {
+          border: 10px solid #444;
+        }
         
 
 
@@ -69,9 +74,9 @@
     </style>
 </head>
 
-<body>
+<body class="">
 
-    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-gray-900 "></div>
+    <div id="gjs" style="height:0px; overflow:hidden" class="dark:bg-background-900 bg-background"></div>
 
 
     <script type="text/javascript">
@@ -85,10 +90,11 @@
             noticeOnUnload: false,
             storageManager: false,
             selectorManager: { escapeName },
+            allowScripts: 1,
             plugins: ['grapesjs-tailwind-frederick', 'grapesjs-touch'],
             pluginsOpts: {
                 'grapesjs-tailwind-frederick': { /* Test here your options  */ },
-                'grapesjs-touch': {}
+                'grapesjs-touch': {},
             },
             canvasCss: `
                   .gjs-selected {
@@ -97,76 +103,26 @@
                   .gjs-panel { display: none; }
             `,
         });
+        window.editor.getWrapper().addClass('bg-background')
+        
+        // <img src="https://play.tailwindcss.com/img/grid.svg" alt="background" class="absolute z-0 top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
 
 
-        const component = `<section class="text-gray-600 body-font overflow-hidden">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-12">
-      <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY ONE</span>
-        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title one for category</h2>
-        <p class="leading-relaxed mb-8">
-            A description for category one, should describe what the category is about. No more than 30 words long.
-        </p>
-        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-primary-500 inline-flex items-center">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>1.2K
-          </span>
-          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-            </svg>6
-          </span>
-        </div>
-        <a class="inline-flex items-center">
-          <img alt="blog" src="https://dummyimage.com/104x104" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-          <span class="flex-grow flex flex-col pl-4">
-            <span class="title-font font-medium text-gray-900">Name of author one</span>
-            <span class="text-gray-400 text-xs tracking-widest mt-0.5">JOB TITLE ONE</span>
-          </span>
-        </a>
-      </div>
-      <div class="p-12 md:w-1/2 flex flex-col items-start">
-        <span class="inline-block py-1 px-2 rounded bg-primary-50 text-primary-500 text-xs font-medium tracking-widest">CATEGORY TWO</span>
-        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Title two for category</h2>
-        <p class="leading-relaxed mb-8">
-            A description for category two, should describe what the category is about. No more than 30 words long.
-        </p>
-        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
-          <a class="text-primary-500 inline-flex items-center">Learn More
-            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"></path>
-              <path d="M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-          <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>1.2K
-          </span>
-          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-            </svg>6
-          </span>
-        </div>
-        <a class="inline-flex items-center">
-          <img alt="blog" src="https://dummyimage.com/103x103" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-          <span class="flex-grow flex flex-col pl-4">
-            <span class="title-font font-medium text-gray-900">Name of author two</span>
-            <span class="text-gray-400 text-xs tracking-widest mt-0.5">JOB TITLE TWO</span>
-          </span>
-        </a>
+        const component = `<section class="text-foreground dark:bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+    </div>
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+    <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>
+      <p class="dark:text-gray-400 mb-8 leading-relaxed">Subhero title that gives a more detailed description of what the business is about.</p>
+      <div class="flex justify-center">
+        <button class="cursor-pointer inline-flex text-primary-foreground bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded text-lg">
+          <span class="text-sm sm:text-base">Start now</span>
+        </button>
+        <button class="cursor-pointer ml-4 inline-flex text-secondary-foreground bg-secondary bg-background-800 dark:bg-secondary  border border-background-600 py-2 px-6 focus:outline-none hover:bg-secondary-700 rounded text-lg">
+          <span class="text-sm sm:text-base">Learn more</span>
+        </button>
       </div>
     </div>
   </div>
@@ -194,7 +150,7 @@
                     const wrapper = document.createElement('div');
                     const htmlToAdd = `
                         <div role="status" class="animate-pulse w-full ">
-                            <div class="h-3 bg-gray-400 rounded-full dark:bg-gray-600 w-full mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="h-3 bg-background-400 rounded-full dark:bg-background-600 w-full mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                         </div>
                     `;
                     wrapper.innerHTML = htmlToAdd;
@@ -228,6 +184,7 @@
                 title: 'Update Theme',
                 'data-tooltip-pos': 'bottom',
             },
+            
         });
     </script>
 </body>

@@ -4,6 +4,113 @@ import loadCommands from './commands';
 import { components } from './blocks/tailwind';
 import colors from './colors';
 
+
+const dark = {
+  primary: {...colors.white , foreground: colors.gray },
+  secondary: { ...colors.gray, foreground: colors.white },
+  background: {
+    ...colors.slate,
+    DEFAULT: colors.slate[950]
+  },
+  foreground: colors.white
+}
+
+const light = {
+  primary: {...colors.gray, 500: "black", DEFAULT: "black", foreground: colors.white },
+  secondary: {...colors.white, foreground: colors.gray },
+  background: {
+    ...colors.white,
+    DEFAULT: "white"
+  },
+  foreground: colors.gray
+}
+
+
+const base = {
+  primary: { 
+    ...colors.emerald,
+    foreground: colors.white
+  },
+  secondary: {
+    ... colors.white,
+    foreground: colors.gray  
+  },
+  background: {
+    ...colors.slate,
+    DEFAULT: colors.slate[950]
+  },
+  foreground: colors.white
+}
+
+const lightbase = {
+  primary: {
+    ...colors.emerald,
+    foreground: colors.gray[50]
+  },
+  secondary: { ...colors.gray,
+    foreground: colors.white
+  },
+  background: {
+    ...colors.white,
+    DEFAULT: colors.white[950]
+  },
+  foreground: colors.gray
+}
+
+const bee = {
+  primary: colors.yellow,
+  secondary: colors.white,
+  background: {
+    ...colors.gray,
+    DEFAULT: "black"
+  },
+  foreground: colors.white
+}
+
+const lightbee = {
+  primary: {...colors.yellow , foreground: colors.white },
+  secondary: {...colors.gray, foreground: colors.white },
+  background: {
+    ...colors.white,
+    DEFAULT: "white"
+  },
+  foreground: colors.gray
+}
+
+
+const lightpastel = {
+  primary: colors.fuchsia,
+  secondary: colors.gray,
+  background: {
+    ...colors.sky,
+    DEFAULT: colors.sky[950]
+  },
+  foreground: {
+    ...colors.white,
+    DEFAULT: colors.gray[50]
+  }
+}
+
+const darkpastel = {
+  primary: colors.fuchsia,
+  secondary: colors.white,
+  background: {
+    ...colors.gray,
+    DEFAULT: "black"
+  },
+  foreground: colors.gray
+}
+
+const themes = {
+  "light": light,
+  "dark": dark,
+  "base": base,
+  "lightBase": lightbase,
+  "bee": bee,
+  "lightBee": lightbee
+}
+
+
 export default (editor, opts = {}) => {
   const options = {
     ...{
@@ -29,17 +136,12 @@ export default (editor, opts = {}) => {
               '128': '32rem',
               '144': '36rem',
             },
-            colors: {
-              primary: colors.gray,
-            },
+            colors: light,
             borderRadius: {
               '4xl': '2rem',
             }
           }
         }
-
-        
-
       },
       cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
         cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
@@ -47,35 +149,6 @@ export default (editor, opts = {}) => {
           cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
         }
       }
-
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
- 
-@layer base {
-  :root {
- 
-    --primary: red;
-    --primary-foreground: red;
- 
-
-  }
- 
-  .dark {
-    --primary: red;
-    --primary-foreground: 222.2 47.4% 1.2%;
-  }
-}
- 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-}
       `,
       changeThemeText: 'Change Theme',
       openCategory: 'Blog',
@@ -158,4 +231,4 @@ export default (editor, opts = {}) => {
 
 
 
-export { components, colors };
+export { components, colors, themes };
