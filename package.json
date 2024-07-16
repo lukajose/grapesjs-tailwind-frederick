@@ -1,6 +1,6 @@
 {
     "name": "grapesjs-tailwind-frederick",
-    "version": "1.0.36",
+    "version": "1.0.37",
     "description": "Grapesjs Tailwind made by Frederick AI team",
     "main": "dist/grapesjs-tailwind-frederick.min.js",
     "repository": {
