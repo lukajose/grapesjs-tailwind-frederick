@@ -33,7 +33,7 @@ export default (editor, opts = {}) => {
               '128': '32rem',
               '144': '36rem',
             },
-            colors: themes['light'],
+            colors: themes.lightPastel,
             borderRadius: {
               '4xl': '2rem',
             }

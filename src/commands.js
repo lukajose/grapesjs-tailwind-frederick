@@ -2,54 +2,6 @@
 import colors from "./colors";
 import themes from './themes';
 
-
-const colorRegex = new RegExp(
-    /(bg|ring)-(slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emarald|teal|cyan|sky|blue|primary|violet|purple|fuchsia|pink|rose)-(\d\d\d)/,
-    "g"
-);
-
-// const getUpdateThemeModal = (editor) => {
-//     const md = editor.Modal
-//     const pfx = editor.getConfig().stylePrefix
-
-//     const container = document.createElement('div')
-
-//     const containerBody = document.createElement('div')
-//     containerBody.style.padding = '40px 0px'
-//     containerBody.style.display = 'flex'
-//     containerBody.style.justifyContent = 'center'
-//     containerBody.style.flexWrap = 'wrap'
-    
-
-//     let selectedTheme
-//     themeList.forEach((theme) => {
-//         const btnColor = document.createElement('button')
-//         btnColor.className = 'change-theme-button'
-//         btnColor.style.backgroundColor = theme.color[500]
-//         btnColor.onclick = () => (selectedTheme = theme)
-//         containerBody.appendChild(btnColor)
-//     })
-
-//     const containerFooter = document.createElement('div')
-
-//     const btnEdit = document.createElement('button')
-//     btnEdit.innerHTML = 'Update'
-//     btnEdit.className = pfx + 'btn-prim ' + pfx + 'btn-import' + ' btn bg-black'
-//     btnEdit.style.float = 'right'
-//     btnEdit.style.background = 'black'
-//     btnEdit.onclick = () => {
-//         updateThemeColor(editor, selectedTheme.name)
-//         md.close()
-//     }
-
-//     // box-shadow: 0 0 0 2pt #c5c5c575
-//     containerFooter.appendChild(btnEdit)
-
-//     container.appendChild(containerBody)
-//     container.appendChild(containerFooter)
-//     return container
-// }
-
 const getAllComponents = (model, result = []) => {
     result.push(model)
     model.components().each((mod) => getAllComponents(mod, result))
@@ -190,7 +142,7 @@ export default (editor, opts = { color : colors.red }) => {
     cm.add('open-update-theme', {
         run(_, sender) {
             // updateThemeColor(editor,colors.red)
-            editor.runCommand('update-theme', { colors: themes.base });
+            editor.runCommand('update-theme', { colors: themes.lightPastel });
         },
     })
 

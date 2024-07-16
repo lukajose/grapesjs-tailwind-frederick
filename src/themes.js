@@ -10,11 +10,11 @@ const dark = {
   }
   
   const light = {
-    primary: {...colors.gray, 500: "black", DEFAULT: "black", foreground: colors.white },
+    primary: {...colors.gray, 500: "#000000", DEFAULT: "#000000", foreground: colors.white },
     secondary: {...colors.white, foreground: colors.gray },
     background: {
       ...colors.white,
-      DEFAULT: "white"
+      DEFAULT: "#ffffff"
     },
     foreground: colors.gray
   }
@@ -56,7 +56,7 @@ const dark = {
     secondary: colors.white,
     background: {
       ...colors.gray,
-      DEFAULT: "black"
+      DEFAULT: "#000000"
     },
     foreground: colors.white
   }
@@ -66,22 +66,28 @@ const dark = {
     secondary: {...colors.gray, foreground: colors.white },
     background: {
       ...colors.white,
-      DEFAULT: "white"
+      DEFAULT: "#ffffff"
     },
     foreground: colors.gray
   }
   
   
   const lightpastel = {
-    primary: colors.fuchsia,
-    secondary: colors.gray,
+    primary: {
+        ...colors.purple,
+        foreground: colors.white
+    },
+    secondary: {
+        ...colors.gray,
+        foreground: colors.white
+    },
     background: {
-      ...colors.sky,
-      DEFAULT: colors.sky[950]
+        ...colors.white,
+        DEFAULT: "#ffffff"
     },
     foreground: {
-      ...colors.white,
-      DEFAULT: colors.gray[50]
+      ...colors.gray,
+      DEFAULT: colors.gray[950]
     }
   }
   
@@ -94,6 +100,7 @@ const dark = {
     },
     foreground: colors.gray
   }
+
   
 const themes = {
     "light": light,
@@ -101,7 +108,8 @@ const themes = {
     "base": base,
     "lightBase": lightbase,
     "bee": bee,
-    "lightBee": lightbee
+    "lightBee": lightbee,
+    "lightPastel": lightpastel,
 }
 
 export default themes;
