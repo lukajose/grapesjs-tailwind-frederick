@@ -142,7 +142,7 @@ export default (editor, opts = { color : colors.red }) => {
     cm.add('open-update-theme', {
         run(_, sender) {
             // updateThemeColor(editor,colors.red)
-            editor.runCommand('update-theme', { colors: themes.lightPastel });
+            editor.runCommand('update-theme', { colors: themes.base });
         },
     })
 
