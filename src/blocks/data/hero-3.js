@@ -1,5 +1,5 @@
 export const source = `
-<section class="text-gray-600 body-font">
+<section class="text-foreground-600 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
     <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>

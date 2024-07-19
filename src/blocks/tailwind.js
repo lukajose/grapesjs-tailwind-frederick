@@ -684,12 +684,14 @@ const sources = [
 
 
 export default (editor, options = {}) => {
-  const bm = editor.Blocks
+  const bm = editor.Blocks;
+
   const script = function () {
     console.info("starting event listener");
-    const btn = document.querySelector('#form-btn');
+    const forms = document.querySelector('form');
+    console.log("forms:", forms);
 
-    btn.addEventListener('click', function(event) {
+    forms.addEventListener('submit', function(event) {
       // event.preventDefault();
       console.log("event:", event);
       const form = document.querySelector('.form-js');
@@ -703,6 +705,8 @@ export default (editor, options = {}) => {
 
       console.log('Form Submitted!');
       const endpointUrl = 'http://localhost:3000/api/hello';
+
+      
       
       // Send the form data to the endpoint
       const res = fetch(endpointUrl, {
@@ -716,54 +720,81 @@ export default (editor, options = {}) => {
       // Optionally, you can send the data to a server using fetch or XMLHttpRequest here
     });
     
-    // form.addEventListener('submit', (e) => {
-    //   e.preventDefault();
-    //   console.log("event submit:", e);
-    //   alert("form submitted");
-    //   // Create an object to store the form data
-
-    //   console.log("formdata:", formData);
-    //   // Specify the endpoint URL
-      
-    // })
   }
-  // Define a new custom component
-// editor.Components.addType('form-js', {
-//   model: {
-//     defaults: {
-//       script,
-//       // isComponent: (el) => {
-//       //   console.log("el:", el);
-//       //   return el.classList?.contains('form-js')
-//       // },
-//       // content: `<div class="form-js w-50 h-50 bg-blue-500 text-white font-bold">Hello</div>`
-//       // Add some style, just to make the component visible
-      
-//     }
-//   }
-// });
 
-// Create a block for the component, so we can drop it easily
-bm.add('test-block', {
-  label: 'Test block',
-  attributes: { class: 'fa fa-text' },
-  content: {content: `<div>
+  // Create a block for the component, so we can drop it easily
+  editor.DomComponents.addType('form', {
+    model: {
+      defaults: {
+        traits: [
+          { name: 'message', type: 'text', default: "Submitted successfully!" },
+        ],
+      },
+    },
+    view: {
+      events: {
+        submit: function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+          // Handle form submission here
+          const endpointUrl = '/api/website/event/form';      
+          // Send the form data to the endpoint
+          const body = JSON.stringify(data);
+          console.log("body:", body);
+          const res = fetch(endpointUrl, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body
+          });
+          e.target.reset();
 
+          const wrapper = editor.getComponents();
+          console.log("wrapper:", wrapper);
 
-<form action="http://localhost:3000/api/hello" method="POST" class="max-w-sm mx-auto form-js">
-<div class="mb-5">
-  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-  <input  id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required />
-</div>
-<div class="mb-5">
-  <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-  <input  id="name" name="name"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name .." required />
-</div>
+          const script = function() {
 
-<button id="form-btn" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>  
-  </div>`, script },
-});
+            const toast = document.querySelector("#toast-close");
+            console.log("toast:", toast)
+            toast.addEventListener("click", () => {
+              toast.classList.add('hidden');
+            })  
+          }
+          const message = form.getAttribute("message");
+          if(message) {
+            var comp1 = wrapper.add({
+              content: `<div id="toaster" data-gjs-type="toaster" class=" fixed bottom-5 border border-background-700 left-1/2 transform hover:bg-background-700 -translate-x-1/2 flex items-center w-full max-w-xs p-4 mb-4 text-foreground-500 bg-background rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 transition-opacity duration-300 " role="alert">
+              <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-primary-500 bg-primary-100 rounded-lg dark:bg-primary-800 dark:text-primary-200">
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                </svg>
+                <span class="sr-only">Check icon</span>
+              </div>
+              <div class="ms-3 text-sm font-normal">${message}</div>
+              <button id="toast-close" type="button" class="ms-auto -mx-1.5 -my-1.5 bg-background text-foreground-400 hover:text-foreground-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-background-700 inline-flex items-center justify-center h-8 w-8 dark:text-foreground-500 dark:hover:text-foreground dark:bg-background-800 dark:hover:bg-background-700" data-dismiss-target="#toaster" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+              </button>
+            </div>`
+           }, script );
+            setTimeout(() => {
+              wrapper.remove(comp1);
+            }, 3000);
+          }
+          
+        
+
+          // You can add your own logic to send the form data to a server
+        }
+      }
+    }
+  })
+
 
   sources.forEach((s) => {
     bm.add(s.id, {

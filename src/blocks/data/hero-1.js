@@ -6,7 +6,7 @@ export const source = `
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
     <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-4xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>
-      <p class="dark:text-gray-400 mb-8 leading-relaxed">Subhero title that gives a more detailed description of what the business is about.</p>
+      <p class="dark:text-foreground-400 mb-8 leading-relaxed">Subhero title that gives a more detailed description of what the business is about.</p>
       <div class="flex justify-center">
         <button class="cursor-pointer inline-flex text-primary-foreground bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded text-lg">
           <span class="text-sm sm:text-base">Start now</span>

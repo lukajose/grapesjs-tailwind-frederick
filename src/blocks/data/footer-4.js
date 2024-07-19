@@ -7,7 +7,7 @@ export const source = `
       </svg>
       <span class="ml-3 text-xl font-bold">Site name</span>
     </a>
-    <p class="text-sm text-foreground-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Site name —<a href="https://twitter.com/_frederickai" class="text-foreground-600 ml-1" rel="noopener noreferrer" target="_blank">@_frederickai</a></p>
+    <p class="text-sm text-foreground-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-foreground-200 sm:py-2 sm:mt-0 mt-4">© 2024 Site name —<a href="https://twitter.com/_frederickai" class="text-foreground-600 ml-1" rel="noopener noreferrer" target="_blank">@_frederickai</a></p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-foreground-600 hover:text-foreground-400 px-2">
             <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

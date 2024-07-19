@@ -1,11 +1,11 @@
 export const source = `
-<section class="text-gray-600 body-font">
+<section class="text-foreground-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     
     <!-- Section Header -->
     <div class="text-center mb-20">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Generate a section title</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500">Generate a brief introductory paragraph for the section, providing an overview and engaging the reader.</p>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-foreground-900 mb-4">Generate a section title</h1>
+      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-foreground-500">Generate a brief introductory paragraph for the section, providing an overview and engaging the reader.</p>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-primary-500 inline-flex"></div>
       </div>
@@ -21,7 +21,7 @@ export const source = `
           </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
+          <h2 class="text-foreground-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
           <p class="leading-relaxed text-base">Generate a detailed description of the feature, explaining its benefits and importance. Be concise and engaging.</p>
           <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -41,7 +41,7 @@ export const source = `
           </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
+          <h2 class="text-foreground-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
           <p class="leading-relaxed text-base">Generate a detailed description of the feature, explaining its benefits and importance. Be concise and engaging.</p>
           <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ export const source = `
           </svg>
         </div>
         <div class="flex-grow">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
+          <h2 class="text-foreground-900 text-lg title-font font-medium mb-3">Generate a feature title</h2>
           <p class="leading-relaxed text-base">Generate a detailed description of the feature, explaining its benefits and importance. Be concise and engaging.</p>
           <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">

@@ -8,7 +8,7 @@ export const source = `
       <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>
       <!-- Replace SUBHERO DESCRIPTION with a detailed description of what the business is about -->
       <p class="mb-8 leading-relaxed text-foreground-600">A subhero title that describes a bit more about the business.</p>
-      <form style="margin: 0;">
+      <form data-gjs-type="form" style="margin: 0;">
         <div class="flex w-full justify-center items-end">
           <!-- Replace PLACEHOLDER with the appropriate input field label -->
           <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">

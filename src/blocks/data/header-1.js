@@ -23,7 +23,7 @@ export const source = `
       </svg>
       <span class="ml-3 text-xl font-bold">Site name</span>
     </a>
-    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-foreground-400 flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-primary-500">First Link</a>
       <a class="mr-5 hover:text-primary-500">Second Link</a>
       <a class="mr-5 hover:text-primary-500">Third Link</a>

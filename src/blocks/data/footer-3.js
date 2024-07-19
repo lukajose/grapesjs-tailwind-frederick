@@ -61,11 +61,11 @@ export const source = `
   </div>
   <div class="border-t border-background-800">
     <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-      <form style="margin: 0;">
+      <form data-gjs-type="form" style="margin: 0;">
         <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
           <div class="relative sm:w-64 w-40 sm:mr-4 mr-2 ">
             <input type="text" id="footer-field" name="footer-field" placeholder="Your email .."class="w-full pl-10 pr-4 bg-background-900 bg-opacity-50 rounded border border-background-700 focus:ring-2 focus:bg-transparent focus:ring-primary-200 focus:border-primary-500 text-base outline-none text-foreground-700 py-1  leading-8 transition-colors duration-200 ease-in-out" required>
-                <div class="absolute inset-y-0 left-0 text-foreground-400/70 dark:text-gray-400/70 pl-4 flex items-center pointer-events-none">
+                <div class="absolute inset-y-0 left-0 text-foreground-400/70 dark:text-foreground-400/70 pl-4 flex items-center pointer-events-none">
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
                         <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z" />
                     </svg>                                                      

@@ -1,8 +1,8 @@
 export const source = `
-<section class="text-gray-600 body-font">
+<section class="text-foreground-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-wrap">
     <!-- Main Headline and Description -->
-    <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Generate a main headline for this section</h2>
+    <h2 class="sm:text-3xl text-2xl text-foreground-900 font-medium title-font mb-2 md:w-2/5">Generate a main headline for this section</h2>
     <div class="md:w-3/5 md:pl-6">
       <p class="leading-relaxed text-base">Generate an engaging introductory paragraph that invites visitors to explore the content of this section.</p>
       <div class="flex md:mt-4 mt-6">

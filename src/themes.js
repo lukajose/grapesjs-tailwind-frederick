@@ -1,4 +1,9 @@
 import colors from "./colors";
+
+
+
+
+
 const dark = {
     primary: {...colors.white , foreground: colors.gray },
     secondary: { ...colors.gray, foreground: colors.white },
@@ -23,7 +28,8 @@ const dark = {
   const base = {
     primary: { 
       ...colors.emerald,
-      foreground: colors.white
+      foreground: colors.white,
+      DEFAULT: colors.emerald[500]
     },
     secondary: {
       ... colors.white,
@@ -39,7 +45,8 @@ const dark = {
   const lightbase = {
     primary: {
       ...colors.emerald,
-      foreground: colors.gray[50]
+      foreground: colors.gray[50],
+      DEFAULT: colors.gray[500]
     },
     secondary: { ...colors.gray,
       foreground: colors.white
@@ -52,7 +59,7 @@ const dark = {
   }
   
   const bee = {
-    primary: colors.yellow,
+    primary: { ...colors.yellow, DEFAULT: colors.yellow[500], foreground: colors.gray[50] },
     secondary: colors.white,
     background: {
       ...colors.gray,
@@ -62,7 +69,7 @@ const dark = {
   }
   
   const lightbee = {
-    primary: {...colors.yellow , foreground: colors.white },
+    primary: {...colors.yellow , foreground: colors.white, DEFAULT: colors.yellow[500] },
     secondary: {...colors.gray, foreground: colors.white },
     background: {
       ...colors.white,
@@ -75,11 +82,13 @@ const dark = {
   const lightpastel = {
     primary: {
         ...colors.purple,
-        foreground: colors.white
+        foreground: colors.white,
+        DEFAULT: colors.purple[500]
     },
     secondary: {
         ...colors.gray,
-        foreground: colors.white
+        foreground: colors.white,
+        DEFAULT: colors.gray[950]
     },
     background: {
         ...colors.white,

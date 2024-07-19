@@ -1,11 +1,11 @@
 export const source = `
-<section class="text-gray-600 body-font">
+<section class="text-foreground-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     
     <!-- Section Header -->
     <div class="flex flex-col text-center w-full mb-20">
       <h2 class="text-xs text-primary-500 tracking-widest font-medium title-font mb-1">Generate a subtitle</h2>
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Generate a section title</h1>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-foreground-900">Generate a section title</h1>
     </div>
     
     <div class="flex flex-wrap -m-4">
@@ -19,7 +19,7 @@ export const source = `
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
-            <h2 class="text-gray-900 text-lg title-font font-medium">Generate a title for the first feature</h2>
+            <h2 class="text-foreground-900 text-lg title-font font-medium">Generate a title for the first feature</h2>
           </div>
           <div class="flex-grow">
             <p class="leading-relaxed text-base">Generate a detailed description of the first feature, explaining its benefits and importance. Be concise and engaging.</p>
@@ -42,7 +42,7 @@ export const source = `
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
             </div>
-            <h2 class="text-gray-900 text-lg title-font font-medium">Generate a title for the second feature</h2>
+            <h2 class="text-foreground-900 text-lg title-font font-medium">Generate a title for the second feature</h2>
           </div>
           <div class="flex-grow">
             <p class="leading-relaxed text-base">Generate a detailed description of the second feature, explaining its benefits and importance. Be concise and engaging.</p>
@@ -66,7 +66,7 @@ export const source = `
                 <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
               </svg>
             </div>
-            <h2 class="text-gray-900 text-lg title-font font-medium">Generate a title for the third feature</h2>
+            <h2 class="text-foreground-900 text-lg title-font font-medium">Generate a title for the third feature</h2>
           </div>
           <div class="flex-grow">
             <p class="leading-relaxed text-base">Generate a detailed description of the third feature, explaining its benefits and importance. Be concise and engaging.</p>

@@ -1,5 +1,5 @@
 export const source = `
-<section class="text-gray-600 body-font">
+<section class="text-foreground-600 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <!-- Replace the src with the relevant image URL -->
     <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
