@@ -1,8 +1,7 @@
 export const source = `
-<section class="bg-transparent text-foreground-600 body-font relative">
-  <div class="absolute  inset-0 bg-background bg-gradient-to-tr from-background to-primary-100 "></div>  
+<section class="bg-transparent text-foreground-600 body-font relative"> 
   <div class="container px-5 py-24 mx-auto flex">
-    <div class="lg:w-1/3 md:w-1/2 bg-background rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+    <div class="lg:w-1/3 md:w-1/2 bg-background rounded-lg p-8 flex border border-foreground-300 flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
       <form data-gjs-type="form" style="margin: 0;" class="form-js">
         <h2 class="text-foreground-900 text-lg sm:text-2xl mb-1 font-bold title-font">Feedback</h2>
         <p class="leading-relaxed mb-5 text-foreground text-xs sm:text-base">A brief and engaging text explaining the purpose of the feedback form.</p>
