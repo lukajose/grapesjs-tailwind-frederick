@@ -8,7 +8,6 @@ export const source = `
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">First link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Second link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Third link</a></li>
-          <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Fourth link</a></li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -17,7 +16,6 @@ export const source = `
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">First link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Second link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Third link</a></li>
-          <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Fourth link</a></li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -26,22 +24,21 @@ export const source = `
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">First link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Second link</a></li>
           <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Third link</a></li>
-          <li><a class="text-foreground-600 hover:text-foreground-800 dark:text-foreground-400 text-sm hover:text-primary-500 cursor-pointer">Fourth link</a></li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <form style="margin: 0;">
+        <form data-gjs-type="form" style="margin: 0;">
           <h2 class="title-font font-medium text-foreground-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
           <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
             <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-              <input type="text" id="footer-field" name="footer-field" placeholder="Your email .."class="w-full pl-10 pr-4 bg-background-900 bg-opacity-50 rounded border border-background-700 focus:ring-2 focus:bg-transparent focus:ring-primary-200 focus:border-primary-500 text-base outline-none text-foreground-700 py-1  leading-8 transition-colors duration-200 ease-in-out" required>
+            <input class="pl-10 flex h-9 w-full rounded-md border border-foreground-300 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50" id="email" name="email" placeholder="email@example.com" type="email" required>
               <div class="absolute inset-y-0 left-0 text-foreground-400/70 dark:text-foreground-400/70 pl-4 flex items-center pointer-events-none">
                   <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
                       <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z" />
                   </svg>                                                      
               </div>
             </div>
-            <button type="submit" class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded"><span>Subscribe</span></button>
+            <button type="submit" class="cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 ">Submit</button>
           </div>
           <p class="text-foreground-500 text-sm mt-2 md:text-left text-center">Subscribe to our newsletter.</p>
         </form>

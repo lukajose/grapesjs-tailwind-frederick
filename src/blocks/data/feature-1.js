@@ -13,7 +13,7 @@ export const source = `
           </svg>
         </div>
         <div class="flex-grow pl-6">
-          <h2 class="text-foreground-900 text-lg title-font font-bold mb-2 dark:text-foreground-900 text-xl font-bold">Generate a feature title</h2>
+          <h2 class="text-foreground-900 text-lg title-font mb-2 dark:text-foreground-900 font-bold">Generate a feature title</h2>
           <p class="leading-relaxed text-base dark:text-foreground-900">Generate a detailed description of the feature, explaining how it benefits the customer. Be concise and to the point.</p>
           <a class="mt-3 text-primary-500 inline-flex items-center dark:text-primary-400">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2 dark:text-primary-400" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export const source = `
           </svg>
         </div>
         <div class="flex-grow pl-6">
-          <h2 class="text-foreground-900 text-lg title-font mb-2 dark:text-foreground-100 text-xl font-bold">Generate a feature title</h2>
+          <h2 class="text-foreground-900 text-lg title-font mb-2 dark:text-foreground-100  font-bold">Generate a feature title</h2>
           <p class="leading-relaxed text-base dark:text-ground-400">Generate a detailed description of the feature, explaining how it benefits the customer. Be concise and to the point.</p>
           <a class="mt-3 text-primary-500 inline-flex items-center dark:text-primary-400">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2 dark:text-primary-400" viewBox="0 0 24 24">
