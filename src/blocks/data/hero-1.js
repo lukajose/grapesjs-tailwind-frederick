@@ -5,14 +5,14 @@ export const source = `
       <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
     </div>
     <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-    <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl xl:text-4xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>
+    <h1 class="text-xl font-bold tracking-tighter sm:text-4xl xl:text-4xl/none bg-clip-text text-transparent bg-gradient-to-r from-foreground-900 to-foreground-700">A hero title that describes the business in one sentence.</h1>
       <p class="dark:text-foreground-400 mb-8 leading-relaxed">Subhero title that gives a more detailed description of what the business is about.</p>
-      <div class="flex justify-center">
-        <button class="cursor-pointer inline-flex text-primary-foreground bg-primary-500 border-0 py-2 px-6 focus:outline-none hover:bg-primary-600 rounded text-lg">
-          <span class="text-sm sm:text-base">Start now</span>
+      <div class="flex justify-center space-between space-x-2">
+        <button class="inline-flex items-center justify-center cursor-pointer whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary-400/90 h-10 px-4 py-2 bg-primary text-primary-foreground">
+          <span class="text-sm sm:text-base cursor-pointer">Start now</span>
         </button>
-        <button class="cursor-pointer ml-4 inline-flex text-secondary-foreground bg-secondary bg-background-800 dark:bg-secondary  border border-background-600 py-2 px-6 focus:outline-none hover:bg-secondary-700 rounded text-lg">
-          <span class="text-sm sm:text-base">Learn more</span>
+        <button class="inline-flex items-center justify-center cursor-pointer border border-foreground-300 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary-400/90 h-10 px-4 py-2 bg-secondary text-secondary-foreground">
+          <span class="text-sm sm:text-base cursor-pointer">Learn more</span>
         </button>
       </div>
     </div>
