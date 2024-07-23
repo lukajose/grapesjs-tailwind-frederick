@@ -137,13 +137,17 @@ export default (editor, opts = {}) => {
     const iframe = frame?.view?.getEl();
 
     if (!iframe) return;
+    // check if frame has been prev created
+    if(iframe?.contentWindow?.tailwind?.config) return;
 
     const latestOptions = getLatestOptions();
     const { tailwindPlayCdn, plugins, config, cover } = latestOptions;
     const init = () => {
       // @ts-ignore
+
       iframe.contentWindow.tailwind.config = config;
     }
+    
 
     const script = document.createElement('script');
     script.src = tailwindPlayCdn + (plugins.length ? `?plugins=${plugins.join()}` : '');
@@ -168,6 +172,7 @@ export default (editor, opts = {}) => {
   }
 
   editor.Canvas.getModel()['on']('change:frames', (m, frames) => {
+    console.log("frames:", frames);
     frames.forEach((frame) => frame.once('loaded', () => appendTailwindCss(frame)));
   });
 
