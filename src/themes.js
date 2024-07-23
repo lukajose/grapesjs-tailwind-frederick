@@ -2,8 +2,6 @@ import colors from "./colors";
 
 
 
-
-
 const dark = {
     primary: {...colors.white , foreground: colors.gray },
     secondary: { ...colors.gray, foreground: colors.white },

@@ -130,6 +130,7 @@ import { source as z4 } from './data/footer-4'
 import { source as z4s } from './data/icons/footer-4'
 import { source as z5 } from './data/footer-5'
 import { source as z5s } from './data/icons/footer-5'
+import themes from '../themes'
 
 const getSvgHtml = (svg) => {
   if (typeof window === 'undefined') return ''
@@ -848,4 +849,55 @@ function generateShades(primaryColor) {
   };
 }
 
-export { components, generateShades };
+
+
+
+var config = {
+  darkMode: ['selector', '[data-mode="dark"]'],
+  theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+    extend: {
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      colors: themes.light,
+      borderRadius: {
+        '4xl': '2rem',
+      }
+    }
+  }
+}
+
+const getConfig = () => {
+  return config;
+}
+
+const setConfig = (newConfig) => {
+  config = newConfig
+}
+
+const setTheme = (theme) => {
+  config = {
+    ...config,
+    theme: {
+      ...config.theme,
+      extend: {
+        ...config.theme.extend,
+        colors: theme
+      }
+    } 
+  }
+}
+
+
+export { components, generateShades, getConfig, setConfig, setTheme };

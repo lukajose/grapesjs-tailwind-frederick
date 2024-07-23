@@ -1,7 +1,7 @@
 import en from './locale/en';
 import loadBlocks from './blocks';
 import loadCommands from './commands';
-import { components } from './blocks/tailwind';
+import { components, getConfig, setConfig } from './blocks/tailwind';
 import colors from './colors';
 import themes from './themes';
 
@@ -51,49 +51,31 @@ export default (editor, opts = {}) => {
   //     openCategory: 'Blog',
   //   }, ...opts
   // };
-
-  const getLatestOptions = () => ({
-    ...{
-      i18n: {},
-      tailwindPlayCdn: 'https://cdn.tailwindcss.com',
-      plugins: [],
-      config: {
-        darkMode: ['selector', '[data-mode="dark"]'],
-        theme: {
-          screens: {
-            sm: '480px',
-            md: '768px',
-            lg: '976px',
-            xl: '1440px',
-          },
-          fontFamily: {
-            sans: ['Graphik', 'sans-serif'],
-            serif: ['Merriweather', 'serif'],
-          },
-          extend: {
-            spacing: {
-              '128': '32rem',
-              '144': '36rem',
-            },
-            colors: themes.light,
-            borderRadius: {
-              '4xl': '2rem',
-            }
+  if(opts.config) {
+    setConfig(opts.config);
+  }
+  const getLatestOptions = () => 
+  {
+    const config = getConfig();
+    return {
+      ...{
+        i18n: {},
+        tailwindPlayCdn: 'https://cdn.tailwindcss.com',
+        plugins: [],
+        config: config,
+        cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
+          cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
+          *:hover {
+            cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
           }
         }
+        `,
+        changeThemeText: 'Change Theme',
+        openCategory: 'Blog',
       },
-      cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
-        cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
-        *:hover {
-          cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
-        }
-      }
-      `,
-      changeThemeText: 'Change Theme',
-      openCategory: 'Blog',
-    },
-    ...opts
-  });
+      ...opts
+    }
+  };
 
   // Initial options
   let options = getLatestOptions();

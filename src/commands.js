@@ -1,4 +1,5 @@
 //import purify from './purifycss'
+import { setTheme } from "./blocks/tailwind";
 import colors from "./colors";
 import themes from './themes';
 
@@ -135,7 +136,8 @@ export default (editor, opts = { color : colors.red }) => {
     cm.add('update-theme', {
         run(_, sender, options = { colors :  defaultTheme  }) {
             console.log("options:", options.colors)
-            updateThemeColor(editor, options.colors )
+            setTheme(options.colors);
+            updateThemeColor(editor, options.colors );
         },
     })
 
