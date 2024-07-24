@@ -114,7 +114,6 @@ export default (editor, opts = {}) => {
   }
 
   editor.Canvas.getModel()['on']('change:frames', (m, frames) => {
-    console.log("frames:", frames);
     frames.forEach((frame) => frame.once('loaded', () => appendTailwindCss(frame)));
     editor?.getWrapper()?.addClass('bg-background')
   });

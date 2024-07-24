@@ -197,10 +197,6 @@ const sources = [
     label: c1s,
     content: c1,
     category: 'Contact',
-    script: function() {
-      alert('Hi');
-      console.log('the element', this);
-    }
     // order: 1
   },
   {
@@ -897,7 +893,7 @@ const setTheme = (theme) => {
       }
     } 
   }
-  console.log("config is now:", config);
+
 }
 
 
