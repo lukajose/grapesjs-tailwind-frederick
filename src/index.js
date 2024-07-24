@@ -9,60 +9,19 @@ import themes from './themes';
 
 
 export default (editor, opts = {}) => {
-  // const options = {
-  //   ...{
-  //     i18n: {},
-  //     // default options
-  //     tailwindPlayCdn: 'https://cdn.tailwindcss.com',
-  //     plugins: [], 
-  //     config: {
-  //       darkMode: ['selector', '[data-mode="dark"]'],
-  //       theme: {
-  //         screens: {
-  //           sm: '480px',
-  //           md: '768px',
-  //           lg: '976px',
-  //           xl: '1440px',
-  //         },
-  //         fontFamily: {
-  //           sans: ['Graphik', 'sans-serif'],
-  //           serif: ['Merriweather', 'serif'],
-  //         },
-  //         extend: {
-  //           spacing: {
-  //             '128': '32rem',
-  //             '144': '36rem',
-  //           },
-  //           colors: themes.light,
-  //           borderRadius: {
-  //             '4xl': '2rem',
-  //           }
-  //         }
-  //       }
-  //     },
-  //     cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
-  //       cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
-  //       *:hover {
-  //         cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), pointer;
-  //       }
-  //     }
-  //     `,
-  //     changeThemeText: 'Change Theme',
-  //     openCategory: 'Blog',
-  //   }, ...opts
-  // };
+
   if(opts.config) {
     setConfig(opts.config);
   }
-  const getLatestOptions = () => 
-  {
+  const getLatestOptions = () => {
     const config = getConfig();
     return {
+      ...opts,
       ...{
         i18n: {},
         tailwindPlayCdn: 'https://cdn.tailwindcss.com',
         plugins: [],
-        config: config,
+        config,
         cover: `.object-cover { filter: sepia(1) hue-rotate(190deg) opacity(.46) grayscale(.7) !important; } * {
           cursor: url(https://e2bbdf25-7697-4747-b9cf-9badb086afbf.frederick-ai.com/assets/editor-cursor.png), default;
           *:hover {
@@ -71,14 +30,15 @@ export default (editor, opts = {}) => {
         }
         `,
         changeThemeText: 'Change Theme',
-        openCategory: 'Blog',
+        openCategory: 'Hero',
       },
-      ...opts
+
     }
   };
 
   // Initial options
   let options = getLatestOptions();
+  console.log("options is now:", options);
 
   // Add blocks
   loadBlocks(editor, options);

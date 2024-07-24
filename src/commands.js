@@ -135,7 +135,6 @@ export default (editor, opts = { color : colors.red }) => {
 
     cm.add('update-theme', {
         run(_, sender, options = { colors :  defaultTheme  }) {
-            console.log("options:", options.colors)
             setTheme(options.colors);
             updateThemeColor(editor, options.colors );
         },
@@ -157,11 +156,7 @@ export default (editor, opts = { color : colors.red }) => {
                         <h1 class="text-primary text-center font-bold">Test Page Id: ${uuid}</h1>
                     </div>`
                 });
-                
-                console.log("New page added:", newPage);
-                
                 const selectedPage = editor.Pages.select(uuid);
-                console.log("Selected page:", selectedPage);
             } catch (error) {
                 console.error("Error in open-update-theme command:", error);
             }
