@@ -152,7 +152,7 @@ export default (editor, opts = { color : colors.red }) => {
                 const uuid = Math.random().toString();
                 const newPage = editor.Pages.add({
                     id: uuid,
-                    component: `<div class="bg-background-900 h-full text-center">
+                    component: `<div class="h-full text-center">
                         <h1 class="text-primary text-center font-bold">Test Page Id: ${uuid}</h1>
                     </div>`
                 });
