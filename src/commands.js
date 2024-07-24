@@ -1,5 +1,5 @@
 //import purify from './purifycss'
-import { setTheme } from "./blocks/tailwind";
+import { components, setTheme } from "./blocks/tailwind";
 import colors from "./colors";
 import themes from './themes';
 
@@ -131,7 +131,7 @@ const updateThemeColor = (editor, colors) => {
 
 export default (editor, opts = { color : colors.red }) => {
     const cm = editor.Commands;
-    const defaultTheme = themes.base;
+    let defaultTheme = themes.dark;
 
     cm.add('update-theme', {
         run(_, sender, options = { colors :  defaultTheme  }) {
@@ -141,12 +141,32 @@ export default (editor, opts = { color : colors.red }) => {
         },
     })
 
-    cm.add('open-update-theme', {
-        run(_, sender) {
-            // updateThemeColor(editor,colors.red)
-            editor.runCommand('update-theme', { colors: themes.base });
+    cm.add('run-theme', {
+        run(_, sender, options = { colors :  defaultTheme  }) {
+            editor.Commands.run("update-theme", { colors: themes.lightBee })
         },
     })
+
+    cm.add('open-update-theme', {
+        run(_, sender) {
+            try {
+                const uuid = Math.random().toString();
+                const newPage = editor.Pages.add({
+                    id: uuid,
+                    component: `<div class="bg-background-900 h-full text-center">
+                        <h1 class="text-primary text-center font-bold">Test Page Id: ${uuid}</h1>
+                    </div>`
+                });
+                
+                console.log("New page added:", newPage);
+                
+                const selectedPage = editor.Pages.select(uuid);
+                console.log("Selected page:", selectedPage);
+            } catch (error) {
+                console.error("Error in open-update-theme command:", error);
+            }
+        },
+    });
 
 
 

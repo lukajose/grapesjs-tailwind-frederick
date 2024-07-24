@@ -105,9 +105,9 @@
 
 
     const component = `
-  <div class="mx-auto container px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 dark:text-foreground-400 dark:bg-gray-900">
-  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8 dark:bg-gray-900 w-full">
-    <div class="divide-y divide-gray-200 dark:divide-gray-500 rounded-2xl bg-background hover:bg-background-900 border border-foreground-300 shadow-sm dark:border-foreground-500 dark:hover:bg-gray-800 hover:bg-gray-100">
+  <div class="mx-auto container px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 dark:text-foreground-400 dark:bg-background-900">
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8 dark:bg-background-900 w-full">
+    <div class="divide-y divide-foreground-400 dark:divide-foreground-500 rounded-2xl bg-background hover:bg-background-900 border border-foreground-300 shadow-sm dark:border-foreground-500 dark:hover:bg-background-800 ">
       <div class="p-6 sm:px-8">
         <!-- Replace STARTER with the appropriate plan name -->
         <h2 class="text-lg font-medium text-foreground-900 dark:text-foreground-200">
@@ -122,7 +122,7 @@
           <span class="text-sm font-medium text-foreground-700 dark:text-foreground-300">/month</span>
         </p>
         <!-- Replace Get Started with appropriate text for the call to action -->
-        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/90 hover:text-primary-foreground-800 focus:outline-none focus:ring active:text-primary-500 sm:mt-6" href="#">
+        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-primary-foreground hover:text-primary-foreground-600 text-center text-sm font-medium  hover:bg-primary/90 hover:text-foreground font-semibold focus:outline-none focus:ring active:text-foreground sm:mt-6" href="#">
           Get Started
         </a>
       </div>
@@ -170,7 +170,7 @@
         </ul>
       </div>
     </div>
-    <div class="divide-y divide-gray-200 dark:divide-gray-500 rounded-2xl border border-foreground-300 bg-background hover:bg-background-900 shadow-sm dark:border-foreground-500 dark:hover:bg-gray-800 hover:bg-gray-100">
+    <div class="divide-y divide-foreground-400 dark:divide-foreground-500 rounded-2xl border border-foreground-300 bg-background hover:bg-background-900 shadow-sm dark:border-foreground-500 dark:hover:bg-background-800 hover:bg-background-100">
       <div class="p-6 sm:px-8">
         <!-- Replace PRO with the appropriate plan name -->
         <h2 class="text-lg font-medium text-foreground-900 dark:text-foreground-200">
@@ -185,7 +185,7 @@
           <span class="text-sm font-medium text-foreground-700 dark:text-foreground-300">/month</span>
         </p>
         <!-- Replace Get Started with appropriate text for the call to action -->
-        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/90 hover:text-primary-foreground-800 focus:outline-none focus:ring active:text-primary-500 sm:mt-6" href="#">
+        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-primary-foreground hover:text-primary-foreground-600 text-center text-sm font-medium  hover:bg-primary/90 hover:text-foreground font-semibold focus:outline-none focus:ring active:text-foreground sm:mt-6" href="#">
           Get Started
         </a>
       </div>
@@ -233,7 +233,7 @@
         </ul>
       </div>
     </div>
-    <div class="divide-y divide-gray-200 dark:divide-gray-500 rounded-2xl bg-background hover:bg-background-900 border border-foreground-300 shadow-sm dark:border-foreground-500 dark:hover:bg-gray-800 hover:bg-gray-100">
+    <div class="divide-y divide-foreground-400 dark:divide-foreground-500 rounded-2xl bg-background hover:bg-background-900 border border-foreground-300 shadow-sm dark:border-foreground-500 dark:hover:bg-background-800 hover:bg-background-100">
       <div class="p-6 sm:px-8">
         <!-- Replace ENTERPRISE with the appropriate plan name -->
         <h2 class="text-lg font-medium text-foreground-900 dark:text-foreground-200">
@@ -247,7 +247,7 @@
           <strong class="text-3xl font-bold text-foreground-900 sm:text-4xl dark:text-foreground-100"> Contact us </strong>
         </p>
         <!-- Replace Get Started with appropriate text for the call to action -->
-        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-center text-sm font-medium text-white hover:bg-primary/90 hover:text-primary-foreground-800 focus:outline-none focus:ring active:text-primary-500 sm:mt-6" href="#">
+        <a class="mt-4 block rounded border border-foreground-300 cursor-pointer font-bold bg-primary px-12 py-3 text-primary-foreground hover:text-primary-foreground-600 text-center text-sm font-medium  hover:bg-primary/90 hover:text-foreground font-semibold focus:outline-none focus:ring active:text-foreground sm:mt-6" href="#">
           Get Started
         </a>
       </div>
@@ -351,10 +351,20 @@
       className: 'fa fa-adjust',
       command: 'open-update-theme',
       attributes: {
-        title: 'Update Theme',
+        title: 'New Page',
         'data-tooltip-pos': 'bottom',
       },
 
+    });
+
+    editor.Panels.addButton('options', {
+      id: 'update-theme-2',
+      className: 'fa fa-adjust',
+      command: 'run-theme',
+      attributes: {
+        title: 'New Theme',
+        'data-tooltip-pos': 'bottom',
+      },
     });
   </script>
 </body>

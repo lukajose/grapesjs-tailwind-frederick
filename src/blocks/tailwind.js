@@ -870,7 +870,7 @@ var config = {
         '128': '32rem',
         '144': '36rem',
       },
-      colors: themes.light,
+      colors: themes.dark,
       borderRadius: {
         '4xl': '2rem',
       }
@@ -897,6 +897,7 @@ const setTheme = (theme) => {
       }
     } 
   }
+  console.log("config is now:", config);
 }
 
 
