@@ -67,7 +67,7 @@ export function generateGradient(primaryColor) {
 }
 
 export function changeSvgColors(svg, colors) {
-    console.log("svg is:", svg);
+
     const parser = new DOMParser();
   
     // Parse the SVG string
@@ -75,8 +75,7 @@ export function changeSvgColors(svg, colors) {
 
     const colorsGradient = generateGradient(colors.stop1);
     const gradients = doc.querySelectorAll('linearGradient');
-    console.log("gradients:", gradients);
-    gradients.forEach((gradient, index) => {
+    gradients.forEach((gradient) => {
         // Get all stop elements within the gradient
         const stops = gradient.querySelectorAll('stop');
         stops.forEach((stop, index) => {
@@ -86,21 +85,8 @@ export function changeSvgColors(svg, colors) {
         }
         });
     });
-    
     const serializer = new XMLSerializer();
     return serializer.serializeToString(doc);
-    // Regular expressions to match the stop colors
-    // const stop1Regex = /<stop stop-color="#[A-Fa-f0-9]{6}"/g;
-    // const stop2Regex = /<stop offset="0.73249" stop-color="#[A-Fa-f0-9]{6}"/g;
-    // const stop3Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g;
-    // const stop4Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g; // 'g' flag to match multiple occurrences
-
-    // // Replace the stop colors in the SVG
-    // let updatedSvg = svg.replace(stop1Regex, `<stop stop-color="${colorsGradient.stop1}"`);
-    // updatedSvg = updatedSvg.replace(stop2Regex, `<stop offset="0.73249" stop-color="${colorsGradient.stop2}"`);
-    // updatedSvg = updatedSvg.replace(stop3Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
-    // updatedSvg = updatedSvg.replace(stop4Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
-    // return updatedSvg;
 }
 
 
