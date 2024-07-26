@@ -1,36 +1,3 @@
-
-const themes = {
-    frederickClip: {
-        stop1: '#A87FFF',
-        stop2: '#DC8AF9',
-        stop3: '#000000',
-        stop4: '#000000'
-    },
-    frederickBase: {
-        stop1: '#1D976C',
-        stop2: '#93F9B9',
-        stop3: '#000000',
-        stop4: '#f3f4f6'
-    },
-    frederickBest: { 
-        stop1: '#000000',
-        stop2: '#1e293b',
-        stop3: '#d1d5db',
-        stop4: '#f3f4f6'
-    },
-    frederickBestDark: {
-        stop1: '#f3f4f6',
-        stop2: '#d1d5db',
-        stop3: '#d1d5db',
-        stop4: '#f3f4f6'
-    },
-    frederickCan: {
-        stop1: '#6E3EB4',
-        stop2: '#6E3EB4',
-        stop3: '#6E3EB4',
-        stop4: '#6E3EB4'
-    }
-};
 export function generateGradient(primaryColor) {
     // Convert hex color to RGB
     function hexToRgb(hex) {
@@ -104,29 +71,3 @@ export function changeSvgColors(svg, colors) {
     updatedSvg = updatedSvg.replace(stop4Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
     return updatedSvg;
 }
-
-const svg = `<svg class="logo" width="973" height="964" viewBox="0 0 973 964" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_748_9)">
-<path d="M600 174L942.08 766.5H257.92L600 174Z" fill="url(#paint0_linear_748_9)"/>
-<path d="M395 174L737.08 766.5H52.92L395 174Z" fill="url(#paint1_linear_748_9)"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_748_9" x1="995" y1="660.768" x2="205" y2="477.232" gradientUnits="userSpaceOnUse">
-<stop/>
-<stop offset="1" stop-color="#666666"/>
-</linearGradient>
-<linearGradient id="paint1_linear_748_9" x1="790" y1="660.768" x2="4.8332e-05" y2="477.232" gradientUnits="userSpaceOnUse">
-<stop/>
-<stop offset="1" stop-color="#666666"/>
-</linearGradient>
-<clipPath id="clip0_748_9">
-<rect width="973" height="964" fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
-`
-
-export const source = changeSvgColors(svg, themes.frederickClip);
-
-

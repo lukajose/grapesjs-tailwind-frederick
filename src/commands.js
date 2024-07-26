@@ -67,20 +67,40 @@ export function generateGradient(primaryColor) {
 }
 
 export function changeSvgColors(svg, colors) {
+    console.log("svg is:", svg);
+    const parser = new DOMParser();
+  
+    // Parse the SVG string
+    const doc = parser.parseFromString(svg, 'image/svg+xml');
 
     const colorsGradient = generateGradient(colors.stop1);
+    const gradients = doc.querySelectorAll('linearGradient');
+    console.log("gradients:", gradients);
+    gradients.forEach((gradient, index) => {
+        // Get all stop elements within the gradient
+        const stops = gradient.querySelectorAll('stop');
+        stops.forEach((stop, index) => {
+        const stopKey = `stop${index + 1}`;
+        if (colorsGradient[stopKey]) {
+            stop.setAttribute('stop-color', colorsGradient[stopKey]);
+        }
+        });
+    });
+    
+    const serializer = new XMLSerializer();
+    return serializer.serializeToString(doc);
     // Regular expressions to match the stop colors
-    const stop1Regex = /<stop stop-color="#[A-Fa-f0-9]{6}"/g;
-    const stop2Regex = /<stop offset="0.73249" stop-color="#[A-Fa-f0-9]{6}"/g;
-    const stop3Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g;
-    const stop4Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g; // 'g' flag to match multiple occurrences
+    // const stop1Regex = /<stop stop-color="#[A-Fa-f0-9]{6}"/g;
+    // const stop2Regex = /<stop offset="0.73249" stop-color="#[A-Fa-f0-9]{6}"/g;
+    // const stop3Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g;
+    // const stop4Regex = /<stop offset="1" stop-color="#[A-Fa-f0-9]{6}"/g; // 'g' flag to match multiple occurrences
 
-    // Replace the stop colors in the SVG
-    let updatedSvg = svg.replace(stop1Regex, `<stop stop-color="${colorsGradient.stop1}"`);
-    updatedSvg = updatedSvg.replace(stop2Regex, `<stop offset="0.73249" stop-color="${colorsGradient.stop2}"`);
-    updatedSvg = updatedSvg.replace(stop3Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
-    updatedSvg = updatedSvg.replace(stop4Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
-    return updatedSvg;
+    // // Replace the stop colors in the SVG
+    // let updatedSvg = svg.replace(stop1Regex, `<stop stop-color="${colorsGradient.stop1}"`);
+    // updatedSvg = updatedSvg.replace(stop2Regex, `<stop offset="0.73249" stop-color="${colorsGradient.stop2}"`);
+    // updatedSvg = updatedSvg.replace(stop3Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
+    // updatedSvg = updatedSvg.replace(stop4Regex, `<stop offset="1" stop-color="${colorsGradient.stop2}"`);
+    // return updatedSvg;
 }
 
 
@@ -149,14 +169,7 @@ export default (editor, opts = { color : colors.red }) => {
     cm.add('open-update-theme', {
         run(_, sender) {
             try {
-                const uuid = Math.random().toString();
-                const newPage = editor.Pages.add({
-                    id: uuid,
-                    component: `<div class="h-full text-center">
-                        <h1 class="text-primary text-center font-bold">Test Page Id: ${uuid}</h1>
-                    </div>`
-                });
-                const selectedPage = editor.Pages.select(uuid);
+                console.log("editor js:", editor.getJs())
             } catch (error) {
                 console.error("Error in open-update-theme command:", error);
             }

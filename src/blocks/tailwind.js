@@ -38,16 +38,45 @@ import { source as d7 } from './data/content-7'
 import { source as d7s } from './data/icons/content-7'
 import { source as d8 } from './data/content-8'
 import { source as d8s } from './data/icons/content-8'
-import { source as logo1 } from './data/logo-1.js'
-import { source as logo1s } from './data/icons/logo-1.js'
-import { source as logo2 } from './data/logo-2.js'
-import { source as logo2s } from './data/icons/logo-2.js'
-import { source as e1 } from './data/ecommerce-1'
-import { source as e1s } from './data/icons/ecommerce-1'
-import { source as e2 } from './data/ecommerce-2'
-import { source as e2s } from './data/icons/ecommerce-2'
-import { source as e3 } from './data/ecommerce-3'
-import { source as e3s } from './data/icons/ecommerce-3'
+import { source as logo1 } from './data/circle-logo-1.js'
+import { source as logo2 } from './data/circle-logo-2.js'
+import { source as logo3 } from './data/circle-logo-3.js'
+import { source as logo4 } from './data/circle-logo-4.js'
+import { source as logo5 } from './data/triangle-logo-1.js'
+import { source as logo6 } from './data/triangle-logo-2.js'
+import { source as logo7 } from './data/triangle-logo-3.js'
+import { source as logo8 } from './data/triangle-logo-4.js'
+import { source as logo9 } from './data/rombo-logo-1.js'
+import { source as logo10 } from './data/rombo-logo-2.js'
+import { source as logo11 } from './data/rombo-logo-3.js'
+import { source as logo12 } from './data/rombo-logo-4.js'
+import { source as logo13 } from './data/square-logo-1.js'
+import { source as logo14 } from './data/square-logo-2.js'
+import { source as logo15 } from './data/square-logo-3.js'
+import { source as logo16 } from './data/square-logo-4.js'
+import { source as logo1s } from './data/icons/circle-logo-1.js'
+import { source as logo2s } from './data/icons/circle-logo-2.js'
+import { source as logo3s } from './data/icons/circle-logo-3.js'
+import { source as logo4s } from './data/icons/circle-logo-4.js'
+import { source as logo5s } from './data/icons/triangle-logo-1.js'
+import { source as logo6s } from './data/icons/triangle-logo-2.js'
+import { source as logo7s } from './data/icons/triangle-logo-3.js'
+import { source as logo8s } from './data/icons/triangle-logo-4.js'
+import { source as logo9s } from './data/icons/rombo-logo-1.js'
+import { source as logo10s } from './data/icons/rombo-logo-2.js'
+import { source as logo11s } from './data/icons/rombo-logo-3.js'
+import { source as logo12s } from './data/icons/rombo-logo-4.js'
+import { source as logo13s } from './data/icons/square-logo-1.js'
+import { source as logo14s } from './data/icons/square-logo-2.js'
+import { source as logo15s } from './data/icons/square-logo-3.js'
+import { source as logo16s } from './data/icons/square-logo-4.js'
+
+// import { source as e1 } from './data/ecommerce-1'
+// import { source as e1s } from './data/icons/ecommerce-1'
+// import { source as e2 } from './data/ecommerce-2'
+// import { source as e2s } from './data/icons/ecommerce-2'
+// import { source as e3 } from './data/ecommerce-3'
+// import { source as e3s } from './data/icons/ecommerce-3'
 import { source as f1 } from './data/feature-1'
 import { source as f1s } from './data/icons/feature-1'
 import { source as f2 } from './data/feature-2'
@@ -64,12 +93,12 @@ import { source as f7 } from './data/feature-7'
 import { source as f7s } from './data/icons/feature-7'
 import { source as f8 } from './data/feature-8'
 import { source as f8s } from './data/icons/feature-8'
-import { source as g1 } from './data/gallery-1'
-import { source as g1s } from './data/icons/gallery-1'
-import { source as g2 } from './data/gallery-2'
-import { source as g2s } from './data/icons/gallery-2'
-import { source as g3 } from './data/gallery-3'
-import { source as g3s } from './data/icons/gallery-3'
+// import { source as g1 } from './data/gallery-1'
+// import { source as g1s } from './data/icons/gallery-1'
+// import { source as g2 } from './data/gallery-2'
+// import { source as g2s } from './data/icons/gallery-2'
+// import { source as g3 } from './data/gallery-3'
+// import { source as g3s } from './data/icons/gallery-3'
 import { source as h1 } from './data/header-1'
 import { source as h1s } from './data/icons/header-1'
 import { source as h2 } from './data/header-2'
@@ -87,15 +116,15 @@ import { source as m3s } from './data/icons/testimonial-3'
 import { source as p1 } from './data/pricing-1'
 import { source as p3 } from './data/pricing-3'
 import { source as p1s } from './data/icons/pricing-1'
-import { source as dmb, script as scdm } from './data/dark-mode-button';
-import { source as p2 } from './data/pricing-2'
-import { source as p2s } from './data/icons/pricing-2'
-import { source as q1 } from './data/step-1'
-import { source as q1s } from './data/icons/step-1'
-// import { source as q2 } from './data/step-2'
-// import q2s from './data/step-2.svg'
-import { source as q3 } from './data/step-3'
-import { source as q3s } from './data/icons/step-3'
+// import { source as dmb, script as scdm } from './data/dark-mode-button';
+// import { source as p2 } from './data/pricing-2'
+// import { source as p2s } from './data/icons/pricing-2'
+// import { source as q1 } from './data/step-1'
+// import { source as q1s } from './data/icons/step-1'
+// // import { source as q2 } from './data/step-2'
+// // import q2s from './data/step-2.svg'
+// import { source as q3 } from './data/step-3'
+// import { source as q3s } from './data/icons/step-3'
 import { source as r1 } from './data/hero-1'
 import { source as r1s } from './data/icons/hero-1'
 import { source as r2 } from './data/hero-2'
@@ -108,18 +137,18 @@ import { source as r5 } from './data/hero-5'
 import { source as r5s } from './data/icons/hero-5'
 import { source as r6 } from './data/hero-6'
 import { source as r6s } from './data/icons/hero-6'
-import { source as s1 } from './data/statistic-1'
-import { source as s1s } from './data/icons/statistic-1'
-import { source as s2 } from './data/statistic-2'
-import { source as s2s } from './data/icons/statistic-2'
-import { source as s3 } from './data/statistic-3'
-import { source as s3s } from './data/icons/statistic-3'
-import { source as t1 } from './data/team-1'
-import { source as t1s } from './data/icons/team-1'
-import { source as t2 } from './data/team-2'
-import { source as t2s } from './data/icons/team-2'
-import { source as t3 } from './data/team-3'
-import { source as t3s } from './data/icons/team-3'
+// import { source as s1 } from './data/statistic-1'
+// import { source as s1s } from './data/icons/statistic-1'
+// import { source as s2 } from './data/statistic-2'
+// import { source as s2s } from './data/icons/statistic-2'
+// import { source as s3 } from './data/statistic-3'
+// import { source as s3s } from './data/icons/statistic-3'
+// import { source as t1 } from './data/team-1'
+// import { source as t1s } from './data/icons/team-1'
+// import { source as t2 } from './data/team-2'
+// import { source as t2s } from './data/icons/team-2'
+// import { source as t3 } from './data/team-3'
+// import { source as t3s } from './data/icons/team-3'
 import { source as z1 } from './data/footer-1'
 import { source as z1s } from './data/icons/footer-1'
 import { source as z2 } from './data/footer-2'
@@ -676,6 +705,104 @@ const sources = [
     label: logo2s,
     content: logo2,
     category: 'Logos'
+  },
+  {
+    id: 'logo-3',
+    class: '',
+    label: logo3s,
+    content: logo3,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-4',
+    class: '',
+    label: logo4s,
+    content: logo4,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-5',
+    class: '',
+    label: logo5s,
+    content: logo5,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-6',
+    class: '',
+    label: logo6s,
+    content: logo6,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-7',
+    class: '',
+    label: logo7s,
+    content: logo7,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-8',
+    class: '',
+    label: logo8s,
+    content: logo8,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-9',
+    class: '',
+    label: logo9s,
+    content: logo9,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-10',
+    class: '',
+    label: logo10s,
+    content: logo10,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-11',
+    class: '',
+    label: logo11s,
+    content: logo11,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-12',
+    class: '',
+    label: logo12s,
+    content: logo12,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-13',
+    class: '',
+    label: logo13s,
+    content: logo13,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-14',
+    class: '',
+    label: logo14s,
+    content: logo14,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-15',
+    class: '',
+    label: logo15s,
+    content: logo15,
+    category: 'Logos'
+  },
+  {
+    id: 'logo-16',
+    class: '',
+    label: logo16s,
+    content: logo16,
+    category: 'Logos'
   }
 ]
 
@@ -683,42 +810,16 @@ const sources = [
 export default (editor, options = {}) => {
   const bm = editor.Blocks;
 
-  const script = function () {
-    console.info("starting event listener");
-    const forms = document.querySelector('form');
-    console.log("forms:", forms);
 
-    forms.addEventListener('submit', function(event) {
-      // event.preventDefault();
-      console.log("event:", event);
-      const form = document.querySelector('.form-js');
-
-      const formData = {};
-      // Get all input elements inside the form
-      form.querySelectorAll('input, textarea, select').forEach(function (input) {
-          formData[input.name] = input.value;
-      });
-      console.log("form Data:", formData);
-
-      console.log('Form Submitted!');
-      const endpointUrl = 'http://localhost:3000/api/hello';
-
-      
-      
-      // Send the form data to the endpoint
-      const res = fetch(endpointUrl, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-      })
-
-      // Optionally, you can send the data to a server using fetch or XMLHttpRequest here
-    });
+  let onSubmit = function(form) {
     
   }
-
+  const handleForm = function(e) {
+    e.preventDefault();
+    const form = e.target;
+    onSubmit(form);
+    
+  }
   // Create a block for the component, so we can drop it easily
   editor.DomComponents.addType('form', {
     model: {
@@ -726,70 +827,60 @@ export default (editor, options = {}) => {
         traits: [
           { name: 'message', type: 'text', default: "Submitted successfully!" },
         ],
-      },
-    },
-    view: {
-      events: {
-        submit: function(e) {
-          e.preventDefault();
-          const form = e.target;
-          const formData = new FormData(form);
-          const data = Object.fromEntries(formData.entries());
-          // Handle form submission here
-          const endpointUrl = '/api/website/event/form';      
-          // Send the form data to the endpoint
-          const body = JSON.stringify(data);
-          console.log("body:", body);
-          const res = fetch(endpointUrl, {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
-              body
-          });
-          e.target.reset();
+        script: function() {
+          const form = this;
+          form.addEventListener("submit", function(e) {
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            // Handle form submission here
+            const endpointUrl = '/api/website/event/form';      
+            // Send the form data to the endpoint
+            const body = JSON.stringify(data);
+            fetch(endpointUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body
+            });
+            e.target.reset();
+            
 
-          const wrapper = editor.getComponents();
-          console.log("wrapper:", wrapper);
-
-          const script = function() {
-
-            const toast = document.querySelector("#toast-close");
-            console.log("toast:", toast)
-            toast.addEventListener("click", () => {
-              toast.classList.add('hidden');
-            })  
-          }
-          const message = form.getAttribute("message");
-          if(message) {
-            var comp1 = wrapper.add({
-              content: `<div id="toaster" data-gjs-type="toaster" class=" fixed bottom-5 border border-background-700 left-1/2 transform hover:bg-background-700 -translate-x-1/2 flex items-center w-full max-w-xs p-4 mb-4 text-foreground-500 bg-background rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 transition-opacity duration-300 " role="alert">
-              <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-primary-500 bg-primary-100 rounded-lg dark:bg-primary-800 dark:text-primary-200">
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                </svg>
-                <span class="sr-only">Check icon</span>
-              </div>
-              <div class="ms-3 text-sm font-normal">${message}</div>
-              <button id="toast-close" type="button" class="ms-auto -mx-1.5 -my-1.5 bg-background text-foreground-400 hover:text-foreground-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-background-700 inline-flex items-center justify-center h-8 w-8 dark:text-foreground-500 dark:hover:text-foreground dark:bg-background-800 dark:hover:bg-background-700" data-dismiss-target="#toaster" aria-label="Close">
-                <span class="sr-only">Close</span>
-                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                </svg>
-              </button>
-            </div>`
-           }, script );
-            setTimeout(() => {
-              wrapper.remove(comp1);
-            }, 3000);
-          }
-          
-        
-
-          // You can add your own logic to send the form data to a server
+            const removeExistingToast = () => {
+              const existingToast = document.getElementById('toaster');
+              if (existingToast) {
+                existingToast.remove();
+              }
+            }  
+            
+            const message = form.getAttribute("message") || "Submitted!";
+            if(message) {
+                const toast = document.createElement("div");
+                toast.innerHTML = `<div id="toaster" data-gjs-type="toaster" class=" fixed bottom-5 border border-background-700 left-1/2 transform hover:bg-background-700 -translate-x-1/2 flex items-center w-full max-w-xs p-4 mb-4 text-foreground-500 bg-background rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 transition-opacity duration-300 " role="alert">
+                <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-primary-500 bg-primary-100 rounded-lg dark:bg-primary-800 dark:text-primary-200">
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                  </svg>
+                  <span class="sr-only">Check icon</span>
+                </div>
+                <div class="ms-3 text-sm font-normal">${message}</div>
+                <button id="toast-close" type="button" class="ms-auto -mx-1.5 -my-1.5 bg-background text-foreground-400 hover:text-foreground-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-background-700 inline-flex items-center justify-center h-8 w-8 dark:text-foreground-500 dark:hover:text-foreground dark:bg-background-800 dark:hover:bg-background-700" data-dismiss-target="#toaster" aria-label="Close">
+                  <span class="sr-only">Close</span>
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                </button>
+              </div>`
+              const closeButton = toast.querySelector('button');
+              closeButton.addEventListener('click', removeExistingToast);
+              setTimeout(removeExistingToast, 3000);
+              document.body.appendChild(toast);
+            }
+          })
         }
-      }
-    }
+      },
+      
+    },
   })
 
 
