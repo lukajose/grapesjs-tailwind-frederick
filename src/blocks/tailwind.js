@@ -830,6 +830,7 @@ export default (editor, options = {}) => {
         script: function() {
           const form = this;
           form.addEventListener("submit", function(e) {
+            e.preventDefault();
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData.entries());
             // Handle form submission here

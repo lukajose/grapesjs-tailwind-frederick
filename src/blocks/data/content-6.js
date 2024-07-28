@@ -14,7 +14,7 @@ export const source = `
             </svg>
           </div>
           <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-foreground-900 text-lg">Generate an author name</h2>
+            <h2 class="font-bold title-font mt-4 text-foreground-900 text-lg">Generate an author name</h2>
             <div class="w-12 h-1 bg-primary-500 rounded mt-2 mb-4"></div>
             <p class="text-base">Generate a brief description about the author, highlighting their expertise and relevance.</p>
           </div>

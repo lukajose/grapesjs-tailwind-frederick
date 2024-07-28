@@ -38,7 +38,7 @@ export default (editor, opts = {}) => {
 
   // Initial options
   let options = getLatestOptions();
-  console.log("options is now:", options);
+
 
   // Add blocks
   loadBlocks(editor, options);

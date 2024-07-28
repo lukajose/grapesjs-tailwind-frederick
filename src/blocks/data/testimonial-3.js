@@ -10,7 +10,7 @@ export const source = `
           <p class="leading-relaxed">Testimonial content goes here. Provide a detailed and engaging testimonial that highlights the customer's experience and satisfaction with your product or service.</p>
           <span class="inline-block h-1 w-10 rounded bg-primary-500 mt-6 mb-4"></span>
           <!-- Replace with the customer's name -->
-          <h2 class="text-foreground-900 font-medium title-font tracking-wider text-sm">Name of testimonial one</h2>
+          <h2 class="text-foreground-900 font-bold title-font tracking-wider text-sm">Name of testimonial one</h2>
           <!-- Replace with the customer's job title -->
           <p class="text-foreground-500">JOB TITLE</p>
         </div>
@@ -23,7 +23,7 @@ export const source = `
           <p class="leading-relaxed">Testimonial content goes here. Provide a detailed and engaging testimonial that highlights the customer's experience and satisfaction with your product or service.</p>
           <span class="inline-block h-1 w-10 rounded bg-primary-500 mt-6 mb-4"></span>
           <!-- Replace with the customer's name -->
-          <h2 class="text-foreground-900 font-medium title-font tracking-wider text-sm">Name of testimonial two</h2>
+          <h2 class="text-foreground-900 font-bold title-font tracking-wider text-sm">Name of testimonial two</h2>
           <!-- Replace with the customer's job title -->
           <p class="text-foreground-500">JOB TITLE</p>
         </div>
@@ -36,7 +36,7 @@ export const source = `
           <p class="leading-relaxed">Testimonial content goes here. Provide a detailed and engaging testimonial that highlights the customer's experience and satisfaction with your product or service.</p>
           <span class="inline-block h-1 w-10 rounded bg-primary-500 mt-6 mb-4"></span>
           <!-- Replace with the customer's name -->
-          <h2 class="text-foreground-900 font-medium title-font tracking-wider text-sm">Name of testimonial three</h2>
+          <h2 class="text-foreground-900 font-bold title-font tracking-wider text-sm">Name of testimonial three</h2>
           <!-- Replace with the customer's job title -->
           <p class="text-foreground-500">JOB TITLE</p>
         </div>

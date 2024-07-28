@@ -6,7 +6,7 @@ export const source = `
         <div class="w-24 h-full bg-primary-500"></div>
       </div>
       <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1 class="sm:w-2/5 text-foreground-900 font-medium title-font text-2xl mb-2 sm:mb-0">Generate a main headline for this section</h1>
+        <h1 class="sm:w-2/5 text-foreground-900 font-bold title-font text-2xl mb-2 sm:mb-0">Generate a main headline for this section</h1>
         <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Generate an engaging introductory paragraph that invites visitors to explore the content of this section.</p>
       </div>
     </div>
@@ -17,7 +17,7 @@ export const source = `
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
         </div>
-        <h2 class="text-xl font-medium title-font text-foreground-900 mt-5">Generate a headline</h2>
+        <h2 class="text-xl font-bold title-font text-foreground-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the first content example, highlighting key points and engaging the reader.</p>
         <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@ export const source = `
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
         </div>
-        <h2 class="text-xl font-medium title-font text-foreground-900 mt-5">Generate a headline</h2>
+        <h2 class="text-xl font-bold title-font text-foreground-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the second content example, highlighting key points and engaging the reader.</p>
         <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ export const source = `
         <div class="rounded-lg h-64 overflow-hidden">
           <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1205x505">
         </div>
-        <h2 class="text-xl font-medium title-font text-foreground-900 mt-5">Generate a headline</h2>
+        <h2 class="text-xl font-bold title-font text-foreground-900 mt-5">Generate a headline</h2>
         <p class="text-base leading-relaxed mt-2">Generate a brief description for the third content example, highlighting key points and engaging the reader.</p>
         <a class="text-primary-500 inline-flex items-center mt-3">Learn More
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
