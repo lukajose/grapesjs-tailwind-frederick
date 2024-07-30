@@ -810,15 +810,17 @@ const sources = [
 export default (editor, options = {}) => {
   const bm = editor.Blocks;
 
-
-  let onSubmit = function(form) {
-    
+  function generateUUID() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0,
+          v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
   }
   const handleForm = function(e) {
     e.preventDefault();
     const form = e.target;
     onSubmit(form);
-    
   }
   // Create a block for the component, so we can drop it easily
   editor.DomComponents.addType('form', {
@@ -826,6 +828,7 @@ export default (editor, options = {}) => {
       defaults: {
         traits: [
           { name: 'message', type: 'text', default: "Submitted successfully!" },
+          { name: 'formId', type: 'text', default: generateUUID() },
         ],
         script: function() {
           const form = this;
@@ -833,8 +836,9 @@ export default (editor, options = {}) => {
             e.preventDefault();
             const formData = new FormData(e.target);
             const data = Object.fromEntries(formData.entries());
+            data["form_id"] = form.getAttribute("formId");
             // Handle form submission here
-            const endpointUrl = '/api/website/event/form';      
+            const endpointUrl = `/api/website/event/form`;      
             // Send the form data to the endpoint
             const body = JSON.stringify(data);
             fetch(endpointUrl, {
@@ -843,7 +847,7 @@ export default (editor, options = {}) => {
                     'Content-Type': 'application/json'
                 },
                 body
-            });
+            })
             e.target.reset();
             
 
