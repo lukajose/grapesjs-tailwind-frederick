@@ -7,7 +7,7 @@ export const source = `
       <form data-gjs-type="form" style="margin: 0;">
       <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
         <div class="relative sm:w-64 w-40 sm:mr-4 mr-2 ">
-          <input class="pl-10 flex h-9 w-full rounded-md border border-foreground-300 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50" id="email" name="email" placeholder="email@example.com" type="email" required>
+          <input class="pl-10 flex h-9 w-full text-foreground-800 rounded-md border border-foreground-300 bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50" id="email" name="email" placeholder="email@example.com" type="email" required>
               <div class="absolute inset-y-0 left-0 text-foreground-400/70 dark:text-foreground-400/70 pl-4 flex items-center pointer-events-none">
                   <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="16" height="14">
                       <path d="M14 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm0 12H2V5.723l5.504 3.145a.998.998 0 0 0 .992 0L14 5.723V12Zm0-8.58L8 6.849 2 3.42V2h12v1.42Z" />

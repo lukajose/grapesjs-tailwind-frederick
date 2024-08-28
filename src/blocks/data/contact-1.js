@@ -7,7 +7,7 @@ export const source = `
         <p class="leading-relaxed mb-5 text-foreground text-xs sm:text-base">A brief and engaging text explaining the purpose of the feedback form.</p>
         <div class="relative mb-4">
           <label for="email" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label>
-          <input placeholder="email@example.com" type="email" id="email" name="email" class="w-full bg-background rounded border border-foreground-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 text-base outline-none text-foreground-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+          <input placeholder="email@example.com" type="email" id="email" name="email" class="w-full bg-background rounded border border-foreground-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 text-base outline-none text-foreground-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
         </div>
         <div class="relative mb-4">
           <label for="message" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Message</label>
